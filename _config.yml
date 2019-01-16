@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect the whole site, values
+# which you are expected to set up once and rarely edit after that.
+
+# Site settings
+title: DHAP 2019
+description: >- # this means to ignore newlines until "baseurl:"
+  This will show up in Google Search results.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Atque, odit. Omnis adipisci laborum, quasi iste doloribus?
+  Dolore neque amet inventore!
+baseurl: "" # the subpath of your site root, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+# colors used throughout the site
+colors:
+  base1: "#002266"
+  base2: "#4D6599"
+  base3: "#E7FBFF"
+  accent1: "#F79E76"
+  accent2: "#C73B1F"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

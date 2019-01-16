@@ -1,0 +1,80 @@
+<header>
+
+    <div id="toggle">
+        <div class="menu-line" id="menu-line-1"> </div>
+        <div class="menu-line" id="menu-line-2"> </div>
+        <div class="menu-line" id="menu-line-3"> </div>
+    </div>
+    
+    <nav id="nav">
+        <div class="nav-button">
+            About <br>
+            <div class="dropdown-content">
+                <div class="nav-link">Link 1</div>
+                <div class="nav-link">Link 2</div>
+                <div class="nav-link">Link 3</div>
+            </div>
+        </div>
+        <div class="nav-button">
+            Councils <br>
+            <div class="dropdown-content">
+                <div class="nav-link">Other 1</div>
+                <div class="nav-link">hello!</div>
+            </div>
+        </div>
+        <div class="nav-button">
+            Councils <br>
+            <div class="dropdown-content">
+                <div class="nav-link">Other 1</div>
+                <div class="nav-link">hello!</div>
+            </div>
+        </div>
+        <div class="nav-button">
+            Councils <br>
+            <div class="dropdown-content">
+                <div class="nav-link">Other 1</div>
+                <div class="nav-link">hello!</div>
+            </div>
+        </div>
+        <div class="nav-button">
+            Councils <br>
+            <div class="dropdown-content">
+                <div class="nav-link">Other 1</div>
+                <div class="nav-link">hello!</div>
+            </div>
+        </div>
+        
+    </nav>
+
+
+</header>
+
+<script>
+
+    if (window.innerWidth < 600) {
+        document.getElementById('toggle').onclick = function() {
+            let nav = document.getElementById("nav");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        };
+
+        let navButtons = document.getElementsByClassName('nav-button');
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < navButtons.length; i++) {
+            navButtons[i].onclick = function(e) {
+
+                // reset every other menu first
+                for (var i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].style.display = "none"
+                }
+
+                // get the first (only) child of the button pressed with classname dropdown-content
+                // then set its display to 'block'
+                e.target.getElementsByClassName('dropdown-content')[0].style.display = 'block'
+            }
+        }
+    }
+</script>

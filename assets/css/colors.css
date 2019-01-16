@@ -1,0 +1,33 @@
+/**
+ * Initialise color vars, as well as other defaults
+ */
+
+:root {
+    /* Darkest base color, used for overall site backgrounds? */
+    --base1: #002265;
+    /* Slightly lighter base color, used for button backgrounds? */
+    --base2: #4D6599;
+    /* Much lighter base color, used for text background */
+    --base3: #E7FBFF;
+    /* Lighter accent color, for inline links */
+    --accent1: #F79E76;
+    /* More intense accent, for highlighted blocks */
+    --accent2: #C73B1F;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--base1);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100vw;
+}
