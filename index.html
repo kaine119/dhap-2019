@@ -5,13 +5,57 @@ stylesheets:
 ---
 <section id="hero">
     <div class="container">
-        <!-- <img src="{{ site.baseurl }}/assets/img/olive-branch.jpg" alt="" id="olive-branch"> -->
         <span id="countdown">
-            <span class="countdown-digits" id="days">31</span>
-            <span class="countdown-digits" id="hours">23</span>
-            <span class="countdown-digits" id="minutes">59</span>
+            <div class="countdown-digits">
+                Days<br>
+                <span id="days">31</span>
+            </div>
+            <div class="countdown-digits">
+                Hours<br>
+                <span id="hours">23</span>
+            </div>
+            <div class="countdown-digits">
+                Minutes<br>
+                <span id="minutes">59</span>
+            </div>
+            <span id="countdown-over">Thank you for coming!</span>
+        </span>
+        <span id="subtitle">
+            ...to DHAP 2019
         </span>
     </div>
 </section>
 
+<script>
+    // 17 Jan 2019, 1am
+    let deadline = new Date(2019, 0, 17, 1, 0, 0);
+
+    let showCountdown = function() {
+        let diff = deadline - new Date();
+
+        if (diff > 0) {
+            let days = Math.floor(diff / 86400000).toString().padStart(2, '0'); // (24 * 60 * 60 * 1000)
+            diff -= days * 86400000;
+            let hours = Math.floor(diff / 3600000).toString().padStart(2, '0'); // (60 * 60 * 1000)
+            diff -= hours * 3600000;
+            let minutes = Math.floor(diff / 60000).toString().padStart(2, '0'); // (60 * 1000)
+
+            // padding
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+        } else {
+            document.getElementById('days').style.display = "none";
+            document.getElementById('hours').style.display = "none";
+            document.getElementById('minutes').style.display = "none";
+            document.getElementById('subtitle').style.display = "none"
+            document.getElementById('countdown-over').style.display = "block";
+        }
+
+    };
+
+    showCountdown();
+
+    setInterval(showCountdown, 1000)
+</script>
 
