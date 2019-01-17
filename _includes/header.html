@@ -51,13 +51,14 @@
 
 <script>
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 900) {
         document.getElementById('toggle').onclick = function() {
             let nav = document.getElementById("nav");
-            if (nav.style.display === "block") {
-                nav.style.display = "none";
+            console.log(nav);
+            if (nav.classList.contains("open")) {
+                nav.classList.remove("open");
             } else {
-                nav.style.display = "block";
+                nav.classList.add("open");
             }
         };
 
@@ -66,14 +67,11 @@
         for (var i = 0; i < navButtons.length; i++) {
             navButtons[i].onclick = function(e) {
 
-                // reset every other menu first
-                for (var i = 0; i < dropdowns.length; i++) {
-                    dropdowns[i].style.display = "none"
-                }
+
 
                 // get the first (only) child of the button pressed with classname dropdown-content
                 // then set its display to 'block'
-                e.target.getElementsByClassName('dropdown-content')[0].style.display = 'block'
+                e.target.getElementsByClassName('dropdown-content')[0].classList.toggle("open")
             }
         }
     }

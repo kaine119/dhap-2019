@@ -21,11 +21,17 @@ header {
     color: #ddd;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 899px) {
 
     nav {
-        display: none;
+        display: block;
+        height: auto;
+        max-height: 0px;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
+        z-index: 1000;
     }
+
 
     #toggle {
         height: 9vh;
@@ -60,11 +66,19 @@ header {
     }
 
     .dropdown-content {
-        display: none;
+        overflow: hidden;
+        height: auto;
+        max-height: 0px;
+        /*transition: max-height 0.5s linear;*/
     }
+
+    .open {
+        max-height: 50vh;
+    }
+
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     #toggle {
         display: none;
     }
@@ -87,7 +101,8 @@ header {
         display: flex;
         align-items: center;    
         justify-content: center;
-        border-right: 0.25vw solid rgb(var(--base3));
+        border-right: 0.25vw solid rgb(var(--base2));
+        border-left: 0.25vw solid rgb(var(--base2));
         /*margin-left: 1vw;*/
         height: 10vh;
         /*margin-right: 1vw;*/
@@ -96,7 +111,10 @@ header {
     }
 
     .nav-button:last-child {
-        border-right: none;
+        border-right: 0.5vw solid rgb(var(--base2));
+    }
+    .nav-button:first-child {
+        border-left: 0.5vw solid rgb(var(--base2));
     }
 
     .dropdown-content {

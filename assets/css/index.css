@@ -152,6 +152,7 @@ section {
 @media screen and (max-width: 1000px) {
     #hero {
         display: block;
+        position: relative;
         height: auto;
         background-size: auto 100vh;
         background-repeat: no-repeat;
@@ -184,7 +185,7 @@ section {
 
     #welcome-address__scroll-prompt {
         position: absolute;
-        top: 80vh;
+        top: 70vh;
         height: 18vh;
         padding-bottom: 2vh;
         width: 100vw;
