@@ -4,26 +4,31 @@ stylesheets:
     - index.css
 ---
 <section id="hero">
-    <div class="container">
+    <div id="countdown-container">
         <span id="countdown">
-            <div class="countdown-digits">
+            <div class="countdown__digits">
                 Days<br>
                 <span id="days">31</span>
             </div>
-            <div class="countdown-digits">
+            <div class="countdown__digits">
                 Hours<br>
                 <span id="hours">23</span>
             </div>
-            <div class="countdown-digits">
+            <div class="countdown__digits">
                 Minutes<br>
                 <span id="minutes">59</span>
             </div>
-            <span id="countdown-over">Thank you for coming!</span>
+            <span id="countdown__over">Thank you for coming!</span>
         </span>
-        <span id="subtitle">
+        <span id="countdown__subtitle">
             ...to DHAP 2019
         </span>
     </div>
+
+    <div id="welcome-address">
+        
+    </div>
+
 </section>
 
 <script>
@@ -45,12 +50,12 @@ stylesheets:
             document.getElementById('hours').innerText = hours;
             document.getElementById('minutes').innerText = minutes;
         } else {
-            let digits = document.getElementsByClassName('countdown-digits');
+            let digits = document.getElementsByClassName('countdown__digits');
             for (var i = 0; i < digits.length; i++) {
                 digits[i].style.display = "none";
             }
-            document.getElementById("subtitle").style.display = "none"
-            document.getElementById('countdown-over').style.display = "block";
+            document.getElementById("countdown__subtitle").style.display = "none"
+            document.getElementById('countdown__over').style.display = "block";
         }
 
     };
