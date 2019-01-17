@@ -1,10 +1,10 @@
 header {
-    background: var(--base1);
+    background: rgb(var(--base1));
 }
 
 .nav-button {
     color: #eee;
-    background: var(--base2);
+    background: rgb(var(--base2));
     font-family: sans-serif;
     font-size: 14pt;
     cursor: pointer;
@@ -16,8 +16,8 @@ header {
 .nav-link {
     text-transform: uppercase;
     padding: 5%;
-    border-bottom: 5px var(--accent1) solid;
-    background: var(--base2);
+    border-bottom: 5px rgb(var(--accent1)) solid;
+    background: rgb(var(--base2));
     color: #ddd;
 }
 
@@ -52,7 +52,7 @@ header {
     .nav-button {
         height: auto;
         padding: 1vh;
-        border-bottom: var(--base1) 2px solid;
+        border-bottom: rgb(var(--base1)) 2px solid;
     }
 
     .nav-button:last-child {
@@ -87,7 +87,7 @@ header {
         display: flex;
         align-items: center;    
         justify-content: center;
-        border-right: 0.25vw solid var(--base3);
+        border-right: 0.25vw solid rgb(var(--base3));
         /*margin-left: 1vw;*/
         height: 10vh;
         /*margin-right: 1vw;*/

@@ -1,18 +1,24 @@
 /**
  * Initialise color vars, as well as other defaults
+ * these are given as R,G,B triplets instead of normal #hex colors,
+ * to facilitate using them with rgba().
+ * to use as rgb:
+ * rgb(var(--base1));
+ * to use as rgba:
+ * rgba(var(--base1), <alpha>);
  */
 
 :root {
     /* Darkest base color, used for overall site backgrounds? */
-    --base1: #002265;
+    --base1: 0,34,101;
     /* Slightly lighter base color, used for button backgrounds? */
-    --base2: #4D6599;
+    --base2: 77, 101, 153;
     /* Much lighter base color, used for text background */
-    --base3: #E7FBFF;
+    --base3: 231, 251, 255;
     /* Lighter accent color, for inline links */
-    --accent1: #F79E76;
+    --accent1: 247, 158, 118;
     /* More intense accent, for highlighted blocks */
-    --accent2: #C73B1F;
+    --accent2: 199, 59, 31;
 }
 
 html {
