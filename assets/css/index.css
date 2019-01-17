@@ -3,7 +3,6 @@
 
 section {
     width: 100vw;
-    background: rgb(var(--base3));
 }
 
 
@@ -15,7 +14,7 @@ section {
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 
 /**
@@ -24,6 +23,7 @@ section {
 #countdown-container {
     background-image: url({{ site.baseurl }}/assets/img/olive-branch-3.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 22vw;
     width: 40vw;
@@ -32,7 +32,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-bottom: 5vh;
-    animation: leaf-wipe 1s ease-in-out;
+    animation: leaf-wipe 2s ease-in-out;
     overflow-x: hidden;
     flex-wrap: none;
 }
@@ -51,7 +51,7 @@ section {
 
 #countdown-container * {
     /*                        v delay the animation for 2s */
-    animation: fade 0.5s linear 1s;
+    animation: fade 0.5s linear 2s;
     animation-fill-mode: both;
 }
 
@@ -103,17 +103,115 @@ section {
  * Welcome address styles
  */
 
-#welcome-address {
-    width: 45vw;
+#welcome-address-container {
+    width: 60vw;
     height: 90vh;
     background: linear-gradient(
-        to left, rgba(210, 210, 210, 0.8) 99%, rgba(210, 210, 210, 0) 100%
+        to left, 
+        rgba(var(--base3), 1) 66%, 
+        rgba(var(--base3), 0)
         );
-    animation: right-fade 1s ease-in-out 1.5s;
+    animation: right-wipe 2s ease-in-out 3s;
     animation-fill-mode: both;
 }
 
-@keyframes right-fade {
-    from {transform: translateX(45vw);}
-    to {transform: translateX(0);}
+#welcome-address {
+    margin-left: 22vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: fade 0.5s linear 5s;
+    animation-fill-mode: both;
+}
+
+#welcome-address__scroll-prompt {
+    display: none;
+}
+
+.welcome-address__title {
+    display: block;
+    background: rgb(var(--accent1));
+    width: auto;
+    height: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#welcome-address p {
+    color: #444;
+}
+
+@keyframes right-wipe {
+    from { transform: translateX(60vw); opacity: 0.3;}
+    to { transform: translateX(0); opacity: 1;}
+}
+
+@media screen and (max-width: 1000px) {
+    #hero {
+        display: block;
+        height: auto;
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: center top;
+        animation: prevent-scroll 0.2s linear 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes prevent-scroll {
+        from { max-height: 90vh; overflow-y: hidden; }
+        to { max-height: none; }
+    }
+
+    #countdown-container {
+        animation: leaf-wipe 1s ease-in-out 1s;
+        animation-fill-mode: both;
+        width: 100vw;
+        height: 56vw;
+    }
+
+    #countdown-container * {
+        animation: fade 0.5s linear 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes leaf-wipe {
+        from { transform: translateX(-100vw); }
+        to { transform: translateX(0); }
+    }
+
+    #welcome-address__scroll-prompt {
+        position: absolute;
+        top: 80vh;
+        height: 18vh;
+        padding-bottom: 2vh;
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        font-size: 20pt;
+        background: linear-gradient(to top, rgba(var(--base3), 1) 50%, rgba(var(--base3), 0));
+
+        animation: fade 0.5s linear 5s;
+        animation-fill-mode: both;
+   }
+
+
+    #welcome-address-container {
+        animation: fade 0.5s linear 5s;
+        animation-fill-mode: both;
+        width: 100vw;
+        height: auto;
+        margin-top: calc(90vh - 56vw);
+        padding-top: 5vh;
+        background: rgb(var(--base3));
+    }
+
+    #welcome-address {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
 }
