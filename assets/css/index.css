@@ -118,13 +118,17 @@ section {
 #welcome-address {
     margin-left: 22vw;
     margin-right: 2vw;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     animation: fade 0.5s linear 5s;
     animation-fill-mode: both;
+    height: 80vh;
+    overflow-y: auto;
 }
+
 
 #welcome-address__scroll-prompt {
     display: none;
@@ -139,9 +143,6 @@ section {
     padding-right: 1vw;
 }
 
-#welcome-address p {
-    color: #444;
-}
 
 @keyframes right-wipe {
     from { transform: translateX(60vw); opacity: 0.3;}
@@ -192,7 +193,7 @@ section {
         justify-content: center;
         text-align: center;
         font-size: 20pt;
-        background: linear-gradient(to top, rgba(var(--base3), 1) 50%, rgba(var(--base3), 0));
+        background: linear-gradient(to top, rgba(var(--base3), 1), rgba(var(--base3), 0));
 
         animation: fade 0.5s linear 5s;
         animation-fill-mode: both;
@@ -210,8 +211,9 @@ section {
     }
 
     #welcome-address {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin: 5vw;
+        height: auto;
+
     }
 
 }
