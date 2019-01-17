@@ -60,6 +60,7 @@ section {
     text-align: center;
     background: var(--accent2);
     font-size: 50pt;
+    border-radius: 10px;
 }
 
 #subtitle {

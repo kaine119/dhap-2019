@@ -45,10 +45,11 @@ stylesheets:
             document.getElementById('hours').innerText = hours;
             document.getElementById('minutes').innerText = minutes;
         } else {
-            document.getElementById('days').style.display = "none";
-            document.getElementById('hours').style.display = "none";
-            document.getElementById('minutes').style.display = "none";
-            document.getElementById('subtitle').style.display = "none"
+            let digits = document.getElementsByClassName('countdown-digits');
+            for (var i = 0; i < digits.length; i++) {
+                digits[i].style.display = "none";
+            }
+            document.getElementById("subtitle").style.display = "none"
             document.getElementById('countdown-over').style.display = "block";
         }
 
