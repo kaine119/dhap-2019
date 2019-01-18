@@ -1,3 +1,6 @@
+---
+---
+
 /**
  * Initialise color vars, as well as other defaults
  * these are given as R,G,B triplets instead of normal #hex colors,
@@ -19,6 +22,11 @@
     --accent1: 247, 158, 118;
     /* More intense accent, for highlighted blocks */
     --accent2: 199, 59, 31;
+}
+
+@font-face {
+    font-family: "Florence";
+    src: url({{ site.baseurl }}/assets/css/Florence-Regular.ttf);
 }
 
 html {

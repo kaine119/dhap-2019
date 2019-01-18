@@ -221,9 +221,9 @@ section {
         animation-fill-mode: both;
         width: 100vw;
         height: auto;
-        margin-top: calc(90vh - 56vw);
+        margin-top: calc(70vh - 56vw);
         padding-top: 5vh;
-        background: rgb(var(--base3));
+        background: rgba(var(--base3), 1);
     }
 
     #welcome-address {
