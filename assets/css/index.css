@@ -126,6 +126,7 @@ section {
     animation-fill-mode: both;
     height: 80vh;
     overflow-y: auto;
+    color: #ddd;
 }
 
 
@@ -140,6 +141,7 @@ section {
     height: auto;
     padding-left: 1vw;
     padding-right: 1vw;
+    color: black;
 }
 
 
