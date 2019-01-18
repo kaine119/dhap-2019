@@ -26,6 +26,16 @@ colors:
   accent1: "#F79E76"
   accent2: "#C73B1F"
 
+collections_dir: writeups
+
+collections: 
+  councils:
+    output: true
+  org_committees:
+    output: true
+  people:
+    output: false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
