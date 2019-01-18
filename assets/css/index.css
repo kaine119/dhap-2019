@@ -106,15 +106,15 @@ section {
  * Welcome address styles
  */
 
-#welcome-address-container {
+#welcome-container {
     width: 40vw;
     height: 90vh;
-    background: rgba(var(--base3), 0.8);
+    background: rgba(var(--base1), 0.8);
     animation: right-wipe 2s ease-in-out 3s;
     animation-fill-mode: both;
 }
 
-#welcome-address {
+#welcome {
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 5vh;
@@ -134,8 +134,13 @@ section {
     display: none;
 }
 
-.welcome-address__title {
+#welcome-address-container {
+    display: none;
+}
+
+.welcome-address__link {
     display: block;
+    position: relative;
     background: rgb(var(--accent1));
     width: auto;
     height: auto;
@@ -150,13 +155,15 @@ section {
     to { transform: translateX(0); opacity: 1;}
 }
 
+
+
 @media screen and (max-width: 1000px) {
     #hero {
         display: block;
         position: relative;
         height: auto;
         background-image: url({{ site.baseurl }}/assets/img/leaves-2.png);
-        background-size: auto 100vh;
+        background-size: 100vh 100vh;
         background-repeat: no-repeat;
         background-position: center top;
         animation: prevent-scroll 0.2s linear 5s;
@@ -175,7 +182,7 @@ section {
         animation: leaf-wipe 1s ease-in-out 1s;
         animation-fill-mode: both;
         width: 80vw;
-        height: 56vw;
+        height: 40vh;
     }
 
     #countdown-container * {
@@ -200,6 +207,10 @@ section {
         to { transform: translateX(0); }
     }
 
+    #welcome-container {
+        display: none;
+    }
+
     #welcome-address__scroll-prompt {
         position: absolute;
         top: 70vh;
@@ -211,27 +222,39 @@ section {
         justify-content: center;
         text-align: center;
         font-size: 20pt;
-        background: linear-gradient(to top, rgba(var(--base3), 1), rgba(var(--base3), 0));
-
+        background: linear-gradient(to top, rgba(var(--base1), 1), rgba(var(--base1), 0));
         animation: fade 0.5s linear 5s;
         animation-fill-mode: both;
+        color: #eee;
    }
 
 
     #welcome-address-container {
+        display: block;
         animation: fade 0.5s linear 5s;
         animation-fill-mode: both;
         width: 100vw;
         height: auto;
-        margin-top: calc(70vh - 56vw);
+        margin-top: 30vh;
         padding-top: 5vh;
-        background: rgba(var(--base3), 1);
+        background: rgb(var(--base1));
     }
 
     #welcome-address {
         margin: 5vw;
         height: auto;
+        color: #eee;
+    }
 
+    .welcome-address__title {
+        display: block;
+        position: relative;
+        background: rgb(var(--accent1));
+        width: auto;
+        height: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        color: black;
     }
 
 }
