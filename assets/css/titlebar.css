@@ -1,0 +1,36 @@
+---
+---
+
+#page-title {
+    width: 100vw;
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(var(--base3), 0) 85%, rgba(var(--base3), 1));
+    position: relative;
+}
+
+#page-title__gradient {
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: -6;
+}
+
+#page-title__content {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#page-title__content span {
+    font-size: 5vw;
+    color: #fff;
+    text-shadow: 0 0 30px #111;
+    text-align: center;
+    filter: none;
+}

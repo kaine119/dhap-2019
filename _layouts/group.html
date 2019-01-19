@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include titlebar.html title=page.name%}
+
 {% for person in site.people %}
     {% if person.group == page.name_short %}
         {{ person.content }}
