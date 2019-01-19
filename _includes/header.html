@@ -10,7 +10,7 @@
         <div class="nav-button">
             About <br>
             <div class="dropdown-content">
-                <div class="nav-link">Link 1</div>
+                <a href="#"><div class="nav-link">Link 1</div></a>
                 <div class="nav-link">Link 2</div>
                 <div class="nav-link">Link 3</div>
             </div>
@@ -48,31 +48,3 @@
 
 
 </header>
-
-<script>
-
-    if (window.innerWidth < 900) {
-        document.getElementById('toggle').onclick = function() {
-            let nav = document.getElementById("nav");
-            console.log(nav);
-            if (nav.classList.contains("open")) {
-                nav.classList.remove("open");
-            } else {
-                nav.classList.add("open");
-            }
-        };
-
-        let navButtons = document.getElementsByClassName('nav-button');
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < navButtons.length; i++) {
-            navButtons[i].onclick = function(e) {
-
-
-
-                // get the first (only) child of the button pressed with classname dropdown-content
-                // then set its display to 'block'
-                e.target.getElementsByClassName('dropdown-content')[0].classList.toggle("open")
-            }
-        }
-    }
-</script>
