@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for person in site.people %}
+    {% if person.group == page.name_short %}
+        {{ person.content }}
+    {% endif %}
+{% endfor %}

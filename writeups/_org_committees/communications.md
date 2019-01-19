@@ -1,6 +1,6 @@
 ---
 name: Communications
-image: communications.jpg
+image_name: communications.jpg
 ---
 
 Something about the communications committee. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione quasi mollitia iure illo, quisquam sed esse et voluptatibus adipisci eum, voluptatem labore aut laborum nobis laudantium! Corporis, eos explicabo!
