@@ -9,7 +9,7 @@ section {
 #hero {
     height: 90vh;
     width: 100%;
-    background-image: url({{ site.baseurl }}/assets/img/leaves-4.jpg);
+    background-image: url({{ site.baseurl }}/assets/img/leaves.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
