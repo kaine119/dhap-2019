@@ -9,13 +9,21 @@ stylesheets:
 {% include titlebar.html title=page.name image=image_name %}
 
 <article class="content">
-    {{ page.content }}
+    <div class="group-description">
+        {{ page.content }}
+    </div>
     
     {% for person in site.people %}
         {% if person.group == page.name_short %}
-            <!-- <img src="{{ site.baseurl}}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}"> -->
-            <h1>{{ person.name }}</h1>
-            {{ person.content | markdownify }}
+            <div class="person">
+                <div class="person__image">
+                    <img src="{{ site.baseurl}}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}">
+                </div>
+                <div class="person__description">
+                    <h1>{{ person.name }}</h1>
+                    {{ person.content | markdownify }}
+                </div>
+            </div>
         {% endif %}
     {% endfor %}
 </article>
