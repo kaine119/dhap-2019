@@ -1,4 +1,9 @@
-header {
+body > header {
+    z-index: 10;
+    background: rgb(var(--base1));
+}
+
+nav {
     background: rgb(var(--base1));
 }
 
@@ -26,15 +31,15 @@ header {
         display: block;
         height: auto;
         max-height: 0px;
-        transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s linear;
         overflow: hidden;
         z-index: 1000;
     }
 
 
     #toggle {
-        height: 9vh;
-        width: 10vh;
+        height: 8vh;
+        width: 5vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,22 +47,24 @@ header {
         align-items: center;
         padding-top: 0.5vh;
         padding-bottom: 0.5vh;
-        margin-left: 80vw;
-        margin-right: 0px;
+        margin-left: auto;
+        margin-right: 5vw;
+        padding-right: 0px
     }
 
     #toggle .menu-line {
-        width: 5vw;
+        width: 20px;
         height: 2px;
         background: white;
-        margin-top: 0.5vh;
-        margin-bottom: 0.5vh;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 
     .nav-button {
         height: auto;
         padding: 1vh;
-        border-bottom: rgb(var(--base1)) 2px solid;
+        border-bottom: rgb(var(--base2)) 2px solid;
+        background: rgb(var(--base1));
     }
 
     .nav-button:last-child {
@@ -72,7 +79,7 @@ header {
     }
 
     .open {
-        max-height: 50vh;
+        max-height: 100vh;
     }
 
 }

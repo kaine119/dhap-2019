@@ -9,12 +9,15 @@
     {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}">
     {% endfor %}
+    {% for stylesheet in layout.stylesheets %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}">
+    {% endfor %}
 
     <title>{{ page.title }}</title>
 </head>
 <body>
     {% include header.html %}
-    
+
     <main>
         {{ content }}
     </main>

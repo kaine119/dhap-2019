@@ -1,11 +1,20 @@
 ---
 layout: default
+stylesheets:
+    - content.css
+    - group.css
 ---
 
-{% include titlebar.html title=page.name%}
+{% include titlebar.html title=page.name %}
 
-{% for person in site.people %}
-    {% if person.group == page.name_short %}
-        {{ person.content }}
-    {% endif %}
-{% endfor %}
+<article class="content">
+    {{ page.content }}
+    
+    {% for person in site.people %}
+        {% if person.group == page.name_short %}
+            <!-- <img src="{{ site.baseurl}}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}"> -->
+            <h1>{{ person.name }}</h1>
+            {{ person.content | markdownify }}
+        {% endif %}
+    {% endfor %}
+</article>

@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    background: var(--base1);
+    background: rgb(var(--base3));
     margin: 0;
     padding: 0;
     max-width: 100%;
