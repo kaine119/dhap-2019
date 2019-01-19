@@ -128,7 +128,7 @@ section {
     color: #ddd;
 }
 
-.welcome__title {
+.welcome__greeting {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,13 +136,13 @@ section {
     flex-basis: 90%;
 }
 
-.welcome__title h2 {
+.welcome__greeting h2 {
     font-size: 30pt;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.welcome__title h1 {
+.welcome__greeting h1 {
     font-size: 60pt;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -243,7 +243,7 @@ section {
 
     #welcome-address-container {
         display: block;
-        animation: fade 0.5s linear 5s;
+        animation: fade 0.5s linear 5s, fade-address 0s linear 5s;
         animation-fill-mode: both;
         width: 100vw;
         height: auto;
@@ -252,10 +252,35 @@ section {
         background: rgb(var(--base1));
     }
 
+    @keyframes fade-address {
+        from { height: 0; padding-top: 0; }
+        to { height: auto; padding-top: 5vh; }
+    }
+
     #welcome-address {
-        margin: 5vw;
+        padding: 5vw;
         height: auto;
         color: #eee;
+    }
+
+    .welcome-address__greeting {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome-address__greeting h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .welcome-address__greeting h1 {
+        font-size: 20vw;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .welcome-address__title {
