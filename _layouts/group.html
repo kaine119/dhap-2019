@@ -5,7 +5,8 @@ stylesheets:
     - group.css
 ---
 
-{% include titlebar.html title=page.name %}
+{% assign image_name = "groups/" | append: page.image_name %}
+{% include titlebar.html title=page.name image=image_name %}
 
 <article class="content">
     {{ page.content }}
