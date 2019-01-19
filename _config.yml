@@ -36,6 +36,18 @@ collections:
   people:
     output: false
 
+defaults: 
+  - scope: 
+      path: ""
+      type: councils
+    values:
+      layout: group
+  - scope: 
+      path: ""
+      type: org_committees
+    values:
+      layout: group
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

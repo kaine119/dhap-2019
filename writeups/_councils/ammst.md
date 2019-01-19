@@ -1,7 +1,7 @@
 ---
 name: ASEAN Ministerial Meeting on Science and Technology
-image-name: ammst.jpg
-layout: default
+name_short: AMMST
+image_name: ammst.jpg
 ---
 Something about AMMST. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, molestiae!
 
