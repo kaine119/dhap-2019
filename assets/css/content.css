@@ -10,6 +10,7 @@ article.content {
     display: flex;
     flex-direction: column;
     justify-content: center;    
+    font-size: 16pt;
     color: #eee;
 }
 
@@ -17,8 +18,8 @@ div.content__background {
     position: absolute;
     width: 100%; height: 100%;
     top: 0; left: 0;
-    background-image: linear-gradient(rgba(var(--base2), 0.9), rgba(var(--base2), 0.9)), url({{ site.baseurl }}/assets/img/{{ page.background }});
+    background-image: linear-gradient(rgba(var(--base1), 0.8), rgba(var(--base1), 0.8)), url({{ site.baseurl }}/assets/img/{{ page.background }});
     background-blend-mode: normal;
-    filter: brightness(75%);
+    filter: brightness(50%);
     z-index: -6;
 }
