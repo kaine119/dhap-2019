@@ -11,6 +11,11 @@ nav {
     background: rgb(var(--base1));
 }
 
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
 .nav-button {
     color: #eee;
     background: rgb(var(--base2));
@@ -122,17 +127,21 @@ nav {
 
 
     .nav-button {
-        width: var(--button-width);
-        display: flex;
-        align-items: center;    
-        justify-content: center;
-        border-right: 0.25vw solid rgb(var(--base2));
-        border-left: 0.25vw solid rgb(var(--base2));
+        border-right: 0.125vw solid rgb(var(--accent1));
+        border-left: 0.125vw solid rgb(var(--accent1));
         /*margin-left: 1vw;*/
         height: 10vh;
         /*margin-right: 1vw;*/
+        flex-grow: 1;
+    }
 
-        flex-shrink: 0;
+    .nav-button__title {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
     }
 
     .nav-button:last-child {
@@ -144,14 +153,13 @@ nav {
 
     .dropdown-content {
         height: auto;
-        width: var(--button-width);
+        width: 100%;
 
         visibility: hidden;
         opacity: 0;
-        position: absolute;
-        top: 10vh;
         z-index: 2;
         transform: translateY(-2em);
+        flex-grow: 0;
 
         transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 

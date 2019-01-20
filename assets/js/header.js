@@ -17,7 +17,7 @@ if (window.innerWidth < 900) {
 
             // if a link in the dropdown is clicked, e will trigger with the child target
             // therefore don't hide the menu if a link is clicked
-            if (e.target != e.currentTarget) {
+            if (e.target.classList.contains("nav-link")) {
                 return;
             }
 
