@@ -66,11 +66,12 @@ section {
 
 .countdown__digits {
     display: inline-flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
+    height: 10vw;
+    width: 10vw;
     color: #eee;
     border-radius: 1vw;
     padding: 1vh;
@@ -79,7 +80,28 @@ section {
     margin-right: 1.5vw;
 }
 
+svg {
+    position: absolute;
+    top: -1vw;
+    left: -1vw;
+    width: 12vw;
+    height: 12vw;
+    z-index: -1;
+}
 
+rect, circle {
+    fill: none;
+    stroke: rgba(var(--accent1), 0.4);
+    stroke-width: 10px;
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s;
+    rx: 2vw;
+    ry: 2vw;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
 
 .countdown__digits span {
     font-size: 70pt;
@@ -206,12 +228,18 @@ section {
         justify-content: center;
     }
 
+    svg {
+        display: none;
+    }
+
     #countdown__minutes {
         display: none;
     }
 
     .countdown__digits {
         margin: 1vw;
+        width: auto;
+        height: auto;
     }
 
     @keyframes leaf-wipe {
