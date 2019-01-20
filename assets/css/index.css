@@ -39,6 +39,7 @@ section {
     animation: leaf-wipe 2s ease-in-out;
     overflow-x: hidden;
     flex-wrap: none;
+    font-family: "Florence"
 }
 
 @keyframes leaf-wipe {
@@ -156,18 +157,22 @@ rect, circle {
     align-items: center;
     justify-content: center;
     flex-basis: 90%;
+    font-family: "Roboto Slab";
 }
 
 .welcome__greeting h2 {
     font-size: 30pt;
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: normal;
 }
 
 .welcome__greeting h1 {
     font-size: 60pt;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    font-family: "Florence";
+    font-weight: normal;
 }
 
 .welcome__link {
@@ -176,6 +181,7 @@ rect, circle {
     border-radius: 10px;
     padding: 10px;
     color: #222;
+    font-family: "Roboto Slab";
 }
 
 
@@ -213,7 +219,7 @@ rect, circle {
     #countdown-container {
         background-size: 80vw;
         background-position: left center;
-        animation: leaf-wipe 1s ease-in-out 1s;
+        animation: leaf-wipe 1s ease-out 1s;
         animation-fill-mode: both;
         width: 80vw;
         height: 40vh;
@@ -243,7 +249,7 @@ rect, circle {
     }
 
     @keyframes leaf-wipe {
-        from { transform: translateX(-100vw); }
+        from { transform: translateX(-80vw); }
         to { transform: translateX(0); }
     }
 
@@ -266,6 +272,7 @@ rect, circle {
         animation: fade 0.5s linear 5s;
         animation-fill-mode: both;
         color: #eee;
+        font-family: "Roboto Slab";
    }
 
 
@@ -303,12 +310,16 @@ rect, circle {
     .welcome-address__greeting h2 {
         margin-top: 0;
         margin-bottom: 0;
+        font-weight: normal;
+        font-family: "Roboto Slab";
     }
 
     .welcome-address__greeting h1 {
         font-size: 20vw;
         margin-top: 5px;
         margin-bottom: 5px;
+        font-family: "Florence";
+        font-weight: normal;
     }
 
     .welcome-address__title {

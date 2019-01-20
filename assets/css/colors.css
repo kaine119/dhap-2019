@@ -29,6 +29,11 @@
     src: url({{ site.baseurl }}/assets/css/Florence-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Roboto Slab";
+    src: url({{ site.baseurl }}/assets/css/RobotoSlab-Regular.ttf);
+}
+
 html {
     max-width: 100%;
     overflow-x: hidden;
@@ -39,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: "Florence", sans-serif;
+    font-family: sans-serif;
 }
 
 main {
