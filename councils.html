@@ -1,0 +1,50 @@
+---
+layout: default
+stylesheets: 
+    - content.css
+    - councils.css
+scripts:
+    - utils.js
+    - GSAP_CSSPlugin.min.js
+    - GSAP_TweenLite.min.js
+    - councils.js
+---
+
+<div id="title" >
+</div>
+
+<div id="content">
+    <div class="content__background"></div>
+
+    {% for council in site.councils %}
+        
+    <div class="council">
+        
+        {% for i in (0..1) %}
+
+        <div class="council__slide council__image">
+            <img src="{{ site.baseurl }}/assets/img/groups/{{ council.image_name }}" alt="">
+        </div>
+        <div class="council__slide council__writeup">
+            {{ council.excerpt }}
+        </div>
+        <div class="council__slide council__title">
+            <div class="council__title--flip">
+                <div class="council__title--short">{{ council.name_short }}</div>
+                <div class="council__title--full">{{ council.name }}</div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+        <div class="council__slide council__image">
+            <img src="{{ site.baseurl }}/assets/img/groups/{{ council.image_name }}" alt="">
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+    
+
+</div>
