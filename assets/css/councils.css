@@ -100,6 +100,7 @@
 }
 
 .council__title:hover {
+    overflow: visible; /* for shadows */
     box-shadow: none;
 }
 
@@ -133,7 +134,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 6vh;
+    font-size: 20pt;
     color: #eee;
     font-family: "Roboto Slab";
 }
@@ -167,6 +168,7 @@
 
 .council__slide.council__writeup {
     background: rgb(var(--base2));
+    color: #eee;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -175,6 +177,10 @@
     font-family: "Roboto Slab";
     text-align: center;
     overflow-y: auto;
+}
+
+.council__slide.council__writeup p {
+    padding: 5%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -206,5 +212,9 @@
         height: 40vh;
         width: 40vh;
 
+    }
+
+    .council__title--full {
+        font-size: 3vh;
     }
 }
