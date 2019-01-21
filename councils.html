@@ -5,12 +5,12 @@ stylesheets:
     - councils.css
 scripts:
     - utils.js
-    - GSAP_CSSPlugin.min.js
-    - GSAP_TweenLite.min.js
     - councils.js
 ---
 
-<div id="title" >
+<div id="title" class="open">
+    <h1>Councils</h1>
+    <p>{{ site.data.paragraphs.councils_intro }}</p>
 </div>
 
 <div id="content">
@@ -31,7 +31,10 @@ scripts:
         <div class="council__slide council__title">
             <div class="council__title--flip">
                 <div class="council__title--short">{{ council.name_short }}</div>
-                <div class="council__title--full">{{ council.name }}</div>
+                <div class="council__title--full">
+                    <p>{{ council.name }}</p>
+                    <a href="{{ council.url }}">Read more</a>
+                </div>
             </div>
         </div>
 
