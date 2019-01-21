@@ -13,6 +13,8 @@ stylesheets:
     <div class="group-description">
         {{ page.content }}
     </div>
+
+    <hr>
     
     {% for person in site.people %}
         {% if person.group == page.name_short %}
