@@ -83,7 +83,6 @@
     height: 45vh;
     margin-left: 7.5vw;
     margin-right: 7.5vw;
-    clip-path: margin-box;
     flex-shrink: 0;
     transition: all 0.5s ease-out;
     pointer-events: auto;
