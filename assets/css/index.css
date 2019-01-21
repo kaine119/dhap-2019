@@ -177,11 +177,6 @@ rect, circle {
 
 .welcome__link {
     flex-basis: 10%;
-    background: rgb(var(--accent1));
-    border-radius: 10px;
-    padding: 10px;
-    color: #222;
-    font-family: "Roboto Slab";
 }
 
 

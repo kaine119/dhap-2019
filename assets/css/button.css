@@ -1,0 +1,12 @@
+.button {
+    background: rgb(var(--accent2));
+    padding: 10px;
+    color: #eee;
+    font-family: "Roboto Slab";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    user-select: none;
+    cursor: pointer;
+}
