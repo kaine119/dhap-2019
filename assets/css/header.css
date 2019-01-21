@@ -1,5 +1,5 @@
 body > header {
-    z-index: 10;
+    z-index: 100;
     background: rgb(var(--base1));
     position: fixed;
     margin-top: 0;
@@ -19,6 +19,7 @@ a {
 .nav-button {
     color: #eee;
     background: rgb(var(--base2));
+    font-family: "Roboto Slab";
     font-size: 14pt;
     cursor: pointer;
     user-select: none;
@@ -32,6 +33,10 @@ a {
     border-bottom: 5px rgb(var(--accent1)) solid;
     background: rgb(var(--base2));
     color: #ddd;
+}
+
+.dropdown-content a.mobile-only {
+    display: none;
 }
 
 @media only screen and (max-width: 899px) {
@@ -93,6 +98,10 @@ a {
         width: 100%;
         padding-top: 1vh;
         padding-bottom: 1vh;
+    }
+
+    .dropdown-content a.mobile-only {
+        display: block;
     }
 
     nav.open {

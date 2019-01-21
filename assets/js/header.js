@@ -21,6 +21,8 @@ if (window.innerWidth < 900) {
                 return;
             }
 
+            e.preventDefault();
+
             // for (var i = 0; i < dropdowns.length; i++) {
             //     dropdowns[i].classList.remove("open")
             // }

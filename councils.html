@@ -33,7 +33,7 @@ scripts:
                 <div class="council__title--short">{{ council.name_short }}</div>
                 <div class="council__title--full">
                     <p>{{ council.name }}</p>
-                    <a href="{{ council.url }}">
+                    <a href="{{ site.baseurl}}{{ council.url }}">
                         {% include button.html content="Read more" %}
                     </a>
                 </div>

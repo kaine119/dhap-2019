@@ -23,22 +23,18 @@
         </div>
 
         <div class="nav-button">
-            <a href="/councils">
+            <a href="{{ site.baseurl }}/councils">
                 <div class="nav-button__title">Councils</div>
             </a>
             <div class="dropdown-content">
-                <a href="#">
-                    <div class="nav-link">Link 1</div>
+                <a href="{{ site.baseurl }}/councils" class="mobile-only">
+                    <div class="nav-link">Overview</div>
                 </a>
-                <a href="#">
-                    <div class="nav-link">Link 2</div>
-                </a>
-                <a href="#">
-                    <div class="nav-link">Link 3</div>
-                </a>
-                <a href="#">
-                    <div class="nav-link">Link 4</div>
-                </a>
+                {% for council in site.councils %}
+                <a href="{{ site.baseurl }}{{ council.url }}">
+                    <div class="nav-link">{{ council.name_short }}</div>
+                </a>    
+                {% endfor %}
             </div>
         </div>
 
