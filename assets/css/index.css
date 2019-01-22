@@ -280,6 +280,7 @@ rect, circle {
         margin-top: 30vh;
         padding-top: 5vh;
         background: rgb(var(--base1));
+        font-family: "Roboto Slab";
     }
 
     @keyframes fade-address {

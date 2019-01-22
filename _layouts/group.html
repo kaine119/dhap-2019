@@ -11,7 +11,7 @@ stylesheets:
 <article class="content">
     <div class="content__background"></div>
     <div class="group-description">
-        {{ page.content }}
+        {{ content }}
     </div>
 
     <hr>
@@ -23,7 +23,7 @@ stylesheets:
                     <img src="{{ site.baseurl }}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}">
                 </div>
                 <div class="person__description">
-                    <h1>{{ person.name }}</h1>
+                    <h2>{{ person.name }}</h2>
                     {{ person.content | markdownify }}
                 </div>
             </div>
