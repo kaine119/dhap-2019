@@ -12,3 +12,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis aliquid nam v
 ## Will i be able to do this?
 
 No.
+
+# Directions
+
+* This way
+* Then there

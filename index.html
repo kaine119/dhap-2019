@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 stylesheets:
     - index.css
 scripts: 
@@ -45,7 +46,9 @@ scripts:
                 <h1>DHAP</h1>
                 <h2>2019</h2>
             </div>
-            {% include button.html classes="welcome__link" content="Welcome Address" %}
+            <a href="{{ "/welcome_address.html" | relative_url }}">
+                {% include button.html classes="welcome__link" content="Welcome Address" %}
+            </a>
         </div>
     </div>
 
