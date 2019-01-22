@@ -1,0 +1,55 @@
+---
+layout: default
+stylesheets: 
+    - content.css
+    - org_comms.css
+scripts:
+    - utils.js
+    - councils.js
+---
+
+<div id="title" class="open">
+    <h1>Organising Committees</h1>
+    <p>{{ site.data.paragraphs.org_committees_intro }}</p>
+</div>
+
+<div id="content">
+    <div class="content__background"></div>
+
+    {% for comm in site.org_committees %}
+        
+    <div class="council">
+        
+        {% for i in (0..1) %}
+
+        <div class="council__slide council__image">
+            <img src="{{ site.baseurl }}/assets/img/groups/{{ comm.image_name }}" alt="">
+        </div>
+        <div class="council__slide council__writeup">
+            <p>{{ comm.excerpt }}</p>
+        </div>
+        <div class="council__slide council__title">
+            <div class="council__title--flip">
+                <div class="council__title--short">{{ comm.name }}</div>
+                <div class="council__title--full">
+                    <p>{{ comm.name }}</p>
+                    <a href="{{ site.baseurl}}{{ comm.url }}">
+                        {% include button.html content="Read more" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+        <div class="council__slide council__image">
+            <img src="{{ site.baseurl }}/assets/img/groups/{{ comm.image_name }}" alt="">
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+    
+
+</div>

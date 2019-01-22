@@ -43,18 +43,14 @@
                 <div class="nav-button__title">Organising Committees</div>
             </a>
             <div class="dropdown-content">
-                <a href="#">
-                    <div class="nav-link">Link 1</div>
+                <a href="{{ site.baseurl }}/org_comms" class="mobile-only">
+                    <div class="nav-link">Overview</div>
                 </a>
-                <a href="#">
-                    <div class="nav-link">Link 2</div>
-                </a>
-                <a href="#">
-                    <div class="nav-link">Link 3</div>
-                </a>
-                <a href="#">
-                    <div class="nav-link">Link 4</div>
-                </a>
+                {% for comm in site.org_committees %}
+                <a href="{{ site.baseurl }}{{ comm.url }}">
+                    <div class="nav-link">{{ comm.name }}</div>
+                </a>    
+                {% endfor %}
             </div>
         </div>
 

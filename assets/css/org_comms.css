@@ -30,7 +30,7 @@
 
 #title h1 {
     font-family: "Florence";
-    font-size: 60pt;
+    font-size: 10vmin;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -149,7 +149,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6vh;
+    text-align: center;
+    font-size: 5vmin;
     color: #eee;
     font-family: "Florence";
 }
@@ -212,6 +213,10 @@
         height: 40vh;
         width: 40vh;
 
+    }
+
+    .council__title--short {
+        font-size: 6vmin;
     }
 
     .council__title--full {

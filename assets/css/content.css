@@ -5,6 +5,7 @@ background: leaves.jpg
 article.content {
     position: relative;
     width: 60vw;
+    min-height: 50vh;
     padding-left: 20vw;
     padding-right: 20vw;
     display: flex;
