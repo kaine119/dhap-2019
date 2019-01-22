@@ -12,6 +12,12 @@ article.content {
     justify-content: center;    
     font-size: 16pt;
     color: #eee;
+    font-family: "Roboto Slab"
+}
+
+
+article.content h1, article.content h2, article.content h3 {
+    font-family: "Florence"
 }
 
 hr {

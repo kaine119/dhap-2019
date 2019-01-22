@@ -1,0 +1,12 @@
+---
+layout: default
+stylesheets: 
+    - content.css
+---
+
+{% include titlebar.html title=page.title %}
+
+<article class="content">
+    <div class="content__background"></div>
+    {{ page.content | markdownify }}
+</article>
