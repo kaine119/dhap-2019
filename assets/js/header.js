@@ -1,12 +1,7 @@
 if (window.innerWidth < 900) {
     document.getElementById('toggle').onclick = function() {
         let nav = document.getElementById("nav");
-        console.log(nav);
-        if (nav.classList.contains("open")) {
-            nav.classList.remove("open");
-        } else {
-            nav.classList.add("open");
-        }
+        nav.classList.toggle("open");
     };
 
     let navButtons = document.getElementsByClassName('nav-button');
@@ -18,6 +13,10 @@ if (window.innerWidth < 900) {
             // if a link in the dropdown is clicked, e will trigger with the child target
             // therefore don't hide the menu if a link is clicked
             if (e.target.classList.contains("nav-link")) {
+                // if they clicked an about link on the about page, open the blinds
+                if (e.target.classList.contains("nav-link__about") && window.location.pathname.match(/about/)) {
+                    document.getElementById("nav").classList.remove("open");
+                }
                 return;
             }
 

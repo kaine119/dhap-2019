@@ -5,6 +5,7 @@ body > header {
     margin-top: 0;
     height: 10vh;
     width: 100vw;
+    box-shadow: 0px 0px 5vh 1vh #222;
 }
 
 nav {
@@ -35,16 +36,22 @@ a {
     color: #ddd;
 }
 
+.nav-link::before {
+    content: "↪ ";
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+
+.nav-link:hover::before {
+    opacity: 1;
+}
+
 .dropdown-content a.mobile-only {
     display: none;
 }
 
 @media only screen and (max-width: 899px) {
-
-    body > header {
-        box-shadow: 0px 0px 5vh 1vh #222;
-    }
-
     nav {
         display: block;
         height: 0vh;
@@ -158,10 +165,10 @@ a {
     }
 
     .nav-button:last-child {
-        border-right: 0.5vw solid rgb(var(--base2));
+        border-right: none;
     }
     .nav-button:first-child {
-        border-left: 0.5vw solid rgb(var(--base2));
+        border-left: none;
     }
 
     .dropdown-content {
