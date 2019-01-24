@@ -1,0 +1,34 @@
+#progressbar {
+    width: 50%;
+    height: 7vmin;
+    background: rgb(var(--accent1));
+}
+
+#progressbar__filled {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    background: rgb(var(--accent2));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#progressbar__padding {
+    width: 0%;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+#progressbar__filled.over_50 {
+    justify-content: flex-start;
+}
+
+#progressbar__padding.over_50 {
+    width: 100%;
+}
+
+#progressbar__label {
+    display: inline-block;
+    font-size: 7vmin;
+}
