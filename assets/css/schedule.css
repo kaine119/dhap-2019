@@ -1,31 +1,35 @@
 #progressbar {
     width: 50%;
     height: 7vmin;
+    color: #222;
     background: rgb(var(--accent1));
+    overflow-x: hidden;
 }
 
 #progressbar__filled {
     display: inline-block;
     height: 100%;
-    width: 60%;
+    width: 0;
     background: rgb(var(--accent2));
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    transition: width 0.5s ease-in-out;
 }
 
 #progressbar__padding {
-    width: 0%;
+    width: 100%;
     flex-shrink: 0;
     height: 100%;
 }
 
 #progressbar__filled.over_50 {
-    justify-content: flex-start;
+    justify-content: flex-end;
+    color: #eee;
 }
 
-#progressbar__padding.over_50 {
-    width: 100%;
+#progressbar_filled.over_50 #progressbar__padding {
+    width: 0%;
 }
 
 #progressbar__label {
