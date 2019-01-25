@@ -6,6 +6,13 @@ body > header {
     height: 10vh;
     width: 100vw;
     box-shadow: 0px 0px 5vh 1vh #222;
+    display: flex;
+}
+
+#logo {
+    background: #c0c;
+    width: 10vw;
+    height: 10vh;
 }
 
 nav {
@@ -52,6 +59,17 @@ a {
 }
 
 @media only screen and (max-width: 899px) {
+    body > header {
+        display: block;
+    }
+
+    #logo {
+        position: absolute;
+        left: 0px; right: 0px;
+        height: 9vh;
+        width: 20vw;
+    }
+
     nav {
         display: block;
         height: 0vh;

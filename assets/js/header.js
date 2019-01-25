@@ -20,6 +20,11 @@ if (window.innerWidth < 900) {
                 return;
             }
 
+            // if a button doesn't have any dropdowns don't prevent the default event
+            if (this.classList.contains("nav-button--no-menu")) {
+                return;
+            }
+
             e.preventDefault();
 
             // for (var i = 0; i < dropdowns.length; i++) {
