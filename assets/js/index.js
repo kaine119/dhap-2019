@@ -23,7 +23,7 @@ let showCountdown = function() {
             // document.getElementById('days__rect').style.strokeDashoffset = (1000 - (days / totalDays) * 1000);
             document.getElementById('days__rect').style.strokeDashoffset = (1000 - (hours / 24) * 1000);
             document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-            document.getElementById('hours__rect').style.strokeDashoffset = (1000 - (minutes / 40) * 1000);
+            document.getElementById('hours__rect').style.strokeDashoffset = (1000 - (minutes / 60) * 1000);
             document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
             document.getElementById('minutes__rect').style.strokeDashoffset = (1000 - (seconds / 60) * 1000);
         } else {
