@@ -26,6 +26,15 @@ colors:
   accent1: "#F79E76"
   accent2: "#C73B1F"
 
+# dhap dates (formatted YYYY-MM-DD[Thh:mm])
+# launch_time: when the website will be deployed
+# start_time: when the summit starts
+# end_time: when the summit ends
+dates:
+  launch_time: 2019-01-25T00:00
+  start_time: 2019-06-06T00:00
+  end_time: 2019-06-03T19:00
+
 collections_dir: writeups
 
 collections: 

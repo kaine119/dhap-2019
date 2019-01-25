@@ -1,8 +1,10 @@
+---
+---
 let progressBar = document.getElementById('progressbar__filled');
 let progressText = document.getElementById('progressbar__label');
 
-let startTime = new Date(2019, 0, 24, 0, 0);
-let endTime = new Date(2019, 0, 24, 23, 0);
+let startTime = new Date("{{ site.dates.start_time }}");
+let endTime = new Date("{{ site.dates.end_time }}");
 let totalProgress = endTime - startTime;
 
 let updateProgress = function() {
