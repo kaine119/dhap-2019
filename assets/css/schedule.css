@@ -3,7 +3,13 @@
     height: 7vmin;
     color: #222;
     background: rgb(var(--accent1));
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    #progressbar {
+        width: 80%;
+    }
 }
 
 #progressbar__filled {
@@ -35,4 +41,6 @@
 #progressbar__label {
     display: inline-block;
     font-size: 7vmin;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
