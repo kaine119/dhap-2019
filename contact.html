@@ -1,0 +1,21 @@
+---
+title: Contact
+layout: default
+stylesheets: 
+    - content.css
+    - contact.css
+---
+
+<div id="title">
+    <h1>Contact</h1>
+    <p>{{ site.data.paragraphs.contact_intro }}</p>
+</div>
+
+<div class="content">
+    <div class="content__background"></div>
+
+    {% for item in site.data.contact %}
+        <p> <span>{{ item.title }}</span> {{ item.content }}</p>
+    {% endfor %}
+
+</div>

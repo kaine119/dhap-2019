@@ -1,0 +1,6 @@
+- title: Email
+  content: dhap@dhs.sg
+- title: Phone
+  content: 90234858
+- title: Other things
+  content: can be added in a config file
