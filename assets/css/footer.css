@@ -1,0 +1,39 @@
+---
+---
+
+footer {
+    height: 20vh;
+    padding-top: 5vh;
+    width: 100vw;
+    background: #f79d76;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__links {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__link {
+    background-color: #ffd0a5;
+    background-size: 5vh 5vh;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#footer__fb {
+    background-image: url({{ site.baseurl }}/assets/img/ZmFjZWJvb2s.svg);
+}
+
+#footer__insta {
+    background-image: url({{ site.baseurl }}/assets/img/insta.png);
+}
