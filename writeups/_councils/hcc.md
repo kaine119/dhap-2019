@@ -1,7 +1,7 @@
 ---
 name: Historical Crisis Committee
 name_short: HCC
-image_name: ammst.jpg
+image_name: hcc.jpg
 ---
 Something about HCC. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex asperiores at ipsam saepe magnam ullam repudiandae sint qui pariatur itaque harum praesentium quidem, molestias nulla illo soluta? Quibusdam blanditiis, veniam.
 
