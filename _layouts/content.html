@@ -4,9 +4,26 @@ stylesheets:
     - content.css
 ---
 
-{% include titlebar.html title=page.title %}
+<div class="bar bar--left">
+    <div class="bar__top">
+        <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+    </div>
+    <div class="bar__middle"></div>
+    <div class="bar__bottom">
+        <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+    </div>
+</div>
 
 <article class="content">
-    <div class="content__background"></div>
     {{ content }}
 </article>
+
+<div class="bar bar--right">
+    <div class="bar__top">
+        <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+    </div>
+    <div class="bar__middle"></div>
+    <div class="bar__bottom">
+        <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+    </div>
+</div>

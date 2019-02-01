@@ -3,12 +3,12 @@
 
 body > header {
     z-index: 100;
-    background: rgb(var(--base1));
+    background: var(--base1);
     position: fixed;
     margin-top: 0;
     height: 10vh;
     width: 100vw;
-    box-shadow: 0px 0px 5vh 1vh #222;
+    /*box-shadow: 0px 0px 5vh 1vh #222;*/
     display: flex;
 }
 
@@ -21,17 +21,19 @@ body > header {
 }
 
 nav {
-    background: rgb(var(--base1));
+    background: var(--base1);
 }
 
 a {
-    color: #eee;
+    /*color: #eee;*/
+    color: var(--base1);
+
     text-decoration: none;
 }
 
 .nav-button {
-    color: #eee;
-    background: rgb(var(--base2));
+    color: var(--base1);
+    background: var(--base1);
     font-family: "Roboto Slab";
     font-size: 14pt;
     cursor: pointer;
@@ -44,8 +46,8 @@ a {
     text-transform: uppercase;
     padding: 5%;
     border-bottom: 5px rgb(var(--accent1)) solid;
-    background: rgb(var(--base2));
-    color: #ddd;
+    background: var(--base2);
+    color: var(--base2);
 }
 
 .nav-link::before {

@@ -18,7 +18,7 @@
     padding-right: 5vw;
     transform: translateX(-30vw);
     transition: transform 1s ease-in-out;
-    background: rgb(var(--base1));
+    background: var(--base1);
     z-index: 10;
     color: #eee;
     display: flex;

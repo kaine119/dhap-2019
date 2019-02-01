@@ -1,19 +1,69 @@
 ---
-background: leaves.jpg
 ---
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bar {
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.bar__middle {
+    background-image: url({{ site.baseurl }}/assets/img/side.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    height: 50vh;
+    background-position: top left;
+    width: 100%;
+    flex-grow: 1;
+    display: block;
+}
+
+.bar__top {
+    height: auto;
+    transform: scaleY(-1);
+}
+
+.bar__top img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.bar__bottom {
+    height: auto;
+}
+
+.bar__bottom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.bar--left {
+    transform: scaleX(-1);
+}
 
 article.content {
     position: relative;
-    width: 60vw;
-    min-height: 50vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;    
     font-size: 15pt;
-    color: #eee;
-    font-family: serif
+    font-family: serif;
+    width: 95vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: #E4C4B9;
+    font-family: "Montserrat";
+
 }
 
 

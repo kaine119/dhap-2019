@@ -1,9 +1,6 @@
 ---
 title: Contact
 layout: content
-stylesheets: 
-- content.css
-- contact.css
 ---
 
 # Email and Social Media

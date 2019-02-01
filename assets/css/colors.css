@@ -13,9 +13,9 @@
 
 :root {
     /* Darkest base color, used for overall site backgrounds? */
-    --base1: 0,34,101;
+    --base1: rgb(58, 86, 145);
     /* Slightly lighter base color, used for button backgrounds? */
-    --base2: 77, 101, 153;
+    --base2: rgb(77, 101, 153);
     /* Much lighter base color, used for text background */
     --base3: 231, 251, 255;
     /* Lighter accent color, for inline links */
