@@ -66,10 +66,18 @@
             </a>
         </div>
 
-        <div class="nav-button nav-button--no-menu">
+        <div class="nav-button nav-button">
             <a href="{{site.baseurl}}/contact.html">
                 <div class="nav-button__title">Contact</div>
             </a>
+            <div class="dropdown-content">
+                <a href="{{ site.baseurl }}/contact.html" class="mobile-only">
+                    <div class="nav-link">Contact Details</div>
+                </a>
+                <a href="{{ site.baseurl }}/registration.html">
+                    <div class="nav-link">Registration</div>
+                </a>    
+            </div>
         </div>
         
     </nav>
