@@ -46,3 +46,15 @@ if (window.innerWidth < 900) {
         }
     }
 }
+
+let updateLogo = debounce(function(positionY) {
+    if (positionY == 0) {
+        document.getElementsByTagName('header')[0].classList.add("logo--expanded")
+    } else {
+        document.getElementsByTagName('header')[0].classList.remove("logo--expanded")
+    }
+});
+
+window.addEventListener('scroll', function() {
+    updateLogo(window.scrollY)
+});
