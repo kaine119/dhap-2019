@@ -3,9 +3,10 @@
 
 footer {
     height: 20vh;
-    padding-top: 5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     width: 100vw;
-    background: #f79d76;
+    background: var(--base1);
     margin-top: 0px;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@ footer {
 }
 
 .footer__link {
-    background-color: #ffd0a5;
+    background-color: var(--accent1);
     background-size: 5vh 5vh;
     height: 10vh;
     width: 10vh;

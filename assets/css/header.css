@@ -7,8 +7,7 @@ body > header {
     position: fixed;
     margin-top: 0;
     height: 10vh;
-    width: 100vw;
-    /*box-shadow: 0px 0px 5vh 1vh #222;*/
+    width: 100%;
     display: flex;
 }
 
@@ -20,34 +19,99 @@ body > header {
     height: 10vh;
 }
 
+#logo:hover {
+    width: 9vw;
+    height: 9vw;
+}
+
+#title {
+    padding-left: calc(9vw - 10vh);
+}
+
 nav {
     background: var(--base1);
 }
 
 a {
-    /*color: #eee;*/
-    color: var(--base1);
+    color: #eee;
 
     text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    height: 10vh;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: visible;
+    flex-grow: 1;
 }
 
 .nav-button {
     color: var(--base1);
     background: var(--base1);
     font-family: "Roboto Slab";
-    font-size: 14pt;
     cursor: pointer;
     user-select: none;
-    /*filter: brightness(85%);*/
 }
 
 
+#toggle {
+    display: none;
+}
+
+.nav-button {
+    border-right: 5px solid rgb(var(--accent1));
+    height: 10vh;
+    width: 10vw;
+    overflow-x: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-button__title {
+    height: 10vh;
+    width: 9vw;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-right: 1vw;
+    align-items: center;
+    font-size: 14pt;
+}
+
+.dropdown-content {
+    height: auto;
+    width: auto;
+    min-width: 10vw;
+    white-space: nowrap;
+    text-align: right;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-2em);
+    /*box-shadow: 0px 0px 2.5vh 0.5vh #222;*/
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.nav-button:hover .dropdown-content {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 3;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
 .nav-link {
     text-transform: uppercase;
-    padding: 5%;
+    padding: 1vw;
     border-bottom: 5px rgb(var(--accent1)) solid;
     background: var(--base2);
-    color: var(--base2);
+    width: auto;
+    /*color: var(--base2);*/
 }
 
 .nav-link::before {
@@ -154,69 +218,7 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-    #toggle {
-        display: none;
-    }
 
-    nav {
-        --button-width: 10vw;
-
-        display: flex;
-        width: 100vw;
-        height: 10vh;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        overflow-x: visible;
-    }
-
-
-    .nav-button {
-        border-right: 0.125vw solid rgb(var(--accent1));
-        border-left: 0.125vw solid rgb(var(--accent1));
-        /*margin-left: 1vw;*/
-        height: 10vh;
-        /*margin-right: 1vw;*/
-        flex-grow: 1;
-    }
-
-    .nav-button__title {
-        height: 10vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2vw;
-    }
-
-    .nav-button:last-child {
-        border-right: none;
-    }
-    .nav-button:first-child {
-        border-left: none;
-    }
-
-    .dropdown-content {
-        height: auto;
-        width: 100%;
-
-        visibility: hidden;
-        opacity: 0;
-        z-index: 2;
-        transform: translateY(-2em);
-        flex-grow: 0;
-        box-shadow: 0px 0px 2.5vh 0.5vh #222;
-        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-
-    }
-
-    .nav-button:hover .dropdown-content {
-        visibility: visible; /* shows sub-menu */
-        opacity: 1;
-        z-index: 3;
-        transform: translateY(0%);
-        transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-    }
 }
 
 main {
