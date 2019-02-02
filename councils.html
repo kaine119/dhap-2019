@@ -4,53 +4,64 @@ title: Councils
 stylesheets: 
     - content.css
     - councils.css
-scripts:
-    - utils.js
-    - councils.js
 ---
 
-<div id="title" class="open">
-    <h1>Councils</h1>
-    <p>{{ site.data.paragraphs.councils_intro }}</p>
-</div>
 
-<div id="content">
-    <div class="content__background"></div>
-
-    {% for council in site.councils %}
-        
-    <div class="council">
-        
-        {% for i in (0..1) %}
-
-        <div class="council__slide council__image">
-            <img src="{{ site.baseurl }}/assets/img/groups/{{ council.image_name }}" alt="">
+<div id="container">
+    <div id="title" class="open">
+        <div id="title__content">
+            <h1>Councils</h1>
+            <p>{{ site.data.paragraphs.councils_intro }}</p>
         </div>
-        <div class="council__slide council__writeup">
-            <p>{{ council.excerpt }}</p>
-        </div>
-        <div class="council__slide council__title">
-            <div class="council__title--flip">
-                <div class="council__title--short">{{ council.name_short }}</div>
-                <div class="council__title--full">
-                    <p>{{ council.name }}</p>
-                    <a href="{{ site.baseurl}}{{ council.url }}">
-                        {% include button.html content="Read more" %}
-                    </a>
-                </div>
+        <div id="title__border">
+            <div id="title__border__top">
+                <img src="{{ site.baseurl }}/assets/img/title_edge.png" alt="">
+            </div>
+            <div id="title__border__middle"></div>
+            <div id="title__border__bottom">
+                <img src="{{ site.baseurl }}/assets/img/title_edge.png" alt="">
             </div>
         </div>
+    </div>
+    <div id="content">
+        <div class="council">
+            {% for i in (0..1) %}
 
-        {% endfor %}
+            {% for council in site.councils %}
+            
+            <div class="council__slide council__title">
+                <div class="council__title--flip">
+                    <div class="council__title--short" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
+                        <img src="" alt="">
+                        {{ council.name_short }}
+                    </div>
+                    <div class="council__title--full">
+                        <p>{{ council.name }}</p>
+                        <a href="{{ site.baseurl}}{{ council.url }}">
+                            {% include button.html content="Read more" %}
+                        </a>
+                    </div>
+                </div>
 
-        <div class="council__slide council__image">
-            <img src="{{ site.baseurl }}/assets/img/groups/{{ council.image_name }}" alt="">
+            </div>
+        
+            {% endfor %}
+
+            {% endfor %}
+        
         </div>
-
+        
     </div>
 
-    {% endfor %}
-
     
-
+    <div class="bar bar--right">
+        <div class="bar__top">
+            <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+        </div>
+        <div class="bar__middle bar__middle--transparent"></div>
+        <div class="bar__bottom">
+            <img src="{{ site.baseurl }}/assets/img/edge.png" alt="">
+        </div>
+    </div>
 </div>
+

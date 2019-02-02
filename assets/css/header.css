@@ -17,15 +17,21 @@ body > header {
     background-position: center;
     width: 10vh;
     height: 10vh;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out
 }
 
-#logo:hover {
+body > header.logo--expanded #logo {
     width: 9vw;
     height: 9vw;
 }
 
-#title {
+#header__title {
     padding-left: calc(9vw - 10vh);
+    transition: padding-left 0.5s ease-in-out;
+}
+
+body > header.logo--expanded #header__title {
+    padding-left: 0;
 }
 
 nav {
@@ -76,7 +82,7 @@ nav {
     height: 10vh;
     width: 9vw;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     text-align: right;
     margin-right: 1vw;
     align-items: center;
