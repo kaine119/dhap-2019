@@ -3,6 +3,8 @@ title: Contact
 layout: content
 ---
 
+{% include titlebar.html title="Contact" %}
+
 # Email and Social Media
 
 Please direct any queries to **aseanplus.communications@dhs.sg.**

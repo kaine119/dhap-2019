@@ -117,3 +117,8 @@ hr {
     width: 60vw;
     border-color: var(--accent2);
 }
+
+strong {
+    color: var(--accent2);
+    font-weight: normal;
+}
