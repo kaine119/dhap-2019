@@ -1,6 +1,11 @@
 ---
 ---
 
+body > header.logo--expanded {
+    background: #fff;
+    color: #222;
+}
+
 body > header.logo--expanded #logo {
     width: 7.5vh;
     height: 7.5vh;
@@ -21,7 +26,7 @@ body > header.logo--expanded #header__title {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background: #E4C4B9;
+    background: var(--base4);
     width: 65vw;
     z-index: 0;
 }
@@ -33,12 +38,14 @@ body > header.logo--expanded #header__title {
     transition: transform 0.5s ease-in-out;
     background: var(--base1);
     z-index: 10;
-    color: #222;
+    color: #eee;
     display: flex;
     flex-direction: row;
     text-align: center;
     box-shadow: 0 0 1vw 0.25vw #222;
-    background: #BBDAEA;
+    /*background: var(--base3);*/
+    background: url({{ site.baseurl }}/assets/img/title_background.png);
+    background-size: cover;
 }
 
 #title__border {
@@ -194,9 +201,11 @@ body > header.logo--expanded #header__title {
     justify-content: center;
     align-items: center;
     font-size: 6vh;
-    color: #222;
+    color: #eee;
     font-family: "Florence";
     background: var(--accent1);
+    background-position: center;
+    background-size: cover;
     backface-visibility: hidden;
 }
 
