@@ -1,5 +1,8 @@
 if (window.innerWidth < 900) {
     document.getElementById('toggle').onclick = function() {
+        let main = document.getElementsByTagName('main')[0];
+        main.classList.toggle("main--shifted")
+
         let nav = document.getElementById("nav");
         nav.classList.toggle("open");
     };
