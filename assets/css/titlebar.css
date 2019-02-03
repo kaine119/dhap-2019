@@ -2,10 +2,11 @@
 ---
 
 #page-title {
-    width: 90vw;
+    width: 100%;
+    padding: 0;
+    height: auto;
     min-height: 30vh;
-    padding: 5vh 5vw 5vh 5vw;
-    /*background: linear-gradient(to bottom, rgba(var(--base3), 0) 70%, rgba(var(--base3), 1));*/
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, var(--base4));
     position: relative;
 }
 
@@ -17,7 +18,7 @@
     background-size: cover;
     position: absolute;
     top: 0px; left: 0px;
-    z-index: -6;
+    z-index: -1;
 }
 
 #page-title__content {

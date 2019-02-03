@@ -17,7 +17,7 @@ main {
 .bar__middle {
     background-image: url({{ site.baseurl }}/assets/img/side.png);
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: top left;
     width: 100%;
     flex-grow: 1;
@@ -55,18 +55,23 @@ article.content {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;    
     font-size: 15pt;
     font-family: serif;
-    width: 80vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    background: #E4C4B9;
+    width: 90vw;
+    background: var(--base4);
     font-family: "Montserrat";
     box-shadow: 0 0 2vh 0.25vh #222;
     z-index: 3;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding-bottom: 5vh;
+}
+
+article.content > * {
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -96,6 +101,11 @@ article.content h1 {
     font-size: 10vmin;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--accent2);
+}
+
+article.content h2 {
+    /* TODO: remove this declaration on launch; */
+    text-align: center;
 }
 
 article.content a {

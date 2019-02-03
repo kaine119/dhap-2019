@@ -55,6 +55,8 @@ let updateLogo = debounce(function(positionY) {
     }
 });
 
+updateLogo(window.scrollY);
+
 window.addEventListener('scroll', function() {
     updateLogo(window.scrollY)
 });

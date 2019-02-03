@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: content
 stylesheets:
     - content.css
     - group.css
@@ -8,25 +8,22 @@ stylesheets:
 {% assign image_name = "groups/" | append: page.image_name %}
 {% include titlebar.html title=page.name image=image_name %}
 
-<article class="content">
-    <div class="content__background"></div>
-    <div class="group-description">
-        {{ content }}
-    </div>
+<div class="group-description">
+    {{ content }}
+</div>
 
-    <hr>
-    
-    {% for person in site.people %}
-        {% if person.group == page.name_short %}
-            <div class="person">
-                <div class="person__image">
-                    <img src="{{ site.baseurl }}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}">
-                </div>
-                <div class="person__description">
-                    <h2>{{ person.name }}</h2>
-                    {{ person.content | markdownify }}
-                </div>
+<hr>
+
+{% for person in site.people %}
+    {% if person.group == page.name_short %}
+        <div class="person">
+            <div class="person__image">
+                <img src="{{ site.baseurl }}/assets/img/people/{{ person.image_name }}" alt="{{ person.name }}">
             </div>
-        {% endif %}
-    {% endfor %}
-</article>
+            <div class="person__description">
+                <h2>{{ person.name }}</h2>
+                {{ person.content | markdownify }}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
