@@ -184,8 +184,9 @@ body > header.logo--expanded #header__title {
     justify-content: center;
     align-items: center;
     font-size: 6vh;
-    color: #eee;
+    color: #222;
     font-family: "Florence";
+    background: var(--accent1);
 }
 
 @media screen and (max-width: 1000px) {
