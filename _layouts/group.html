@@ -8,9 +8,7 @@ stylesheets:
 {% assign image_name = "groups/" | append: page.image_name %}
 {% include titlebar.html title=page.name image=image_name %}
 
-<div class="group-description">
-    {{ content }}
-</div>
+{{ content }}
 
 <hr>
 
