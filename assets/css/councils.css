@@ -2,13 +2,18 @@
 ---
 
 body > header.logo--expanded #logo {
-    width: 10vh;
-    height: 10vh;
+    width: 7.5vh;
+    height: 7.5vh;
+}
+
+#header__title {
+    padding-left: 2.5vw;
 }
 
 body > header.logo--expanded #header__title {
-    padding-left: calc(9vw - 10vh);
+    padding-left: 2.5vw;
 }
+
 
 #content {
     height: auto;

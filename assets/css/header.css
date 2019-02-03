@@ -6,7 +6,7 @@ body > header {
     background: var(--base1);
     position: fixed;
     margin-top: 0;
-    height: 10vh;
+    height: 7.5vh;
     width: 100%;
     display: flex;
 }
@@ -15,8 +15,8 @@ body > header {
     background: url({{ site.baseurl }}/assets/img/logo.png);
     background-size: cover;
     background-position: center;
-    width: 10vh;
-    height: 10vh;
+    width: 7.5vh;
+    height: 7.5vh;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out
 }
 
@@ -26,7 +26,7 @@ body > header.logo--expanded #logo {
 }
 
 #header__title {
-    padding-left: calc(9vw - 10vh);
+    padding-left: calc(9vw - 7.5vh);
     transition: padding-left 0.5s ease-in-out;
 }
 
@@ -47,7 +47,7 @@ a {
 
 nav {
     display: flex;
-    height: 10vh;
+    height: 7.5vh;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
@@ -70,7 +70,7 @@ nav {
 
 .nav-button {
     border-right: 5px solid var(--accent1);
-    height: 10vh;
+    height: 7.5vh;
     width: 10vw;
     overflow-x: visible;
     display: flex;
@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-button__title {
-    height: 10vh;
+    height: 7.5vh;
     width: 9vw;
     display: flex;
     justify-content: flex-end;
@@ -223,11 +223,7 @@ nav {
 
 }
 
-@media only screen and (min-width: 900px) {
-
-}
-
 main {
     z-index: -5;
-    padding-top: 10vh;
+    padding-top: 7.5vh;
 }
