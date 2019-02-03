@@ -7,6 +7,11 @@ if (window.innerWidth < 900) {
         nav.classList.toggle("open");
     };
 
+    document.getElementsByTagName('main')[0].onclick = function() {
+        this.classList.remove("main--shifted")
+        document.getElementById('nav').classList.remove('open');
+    }
+
     let navButtons = document.getElementsByClassName('nav-button');
     let dropdowns = document.getElementsByClassName("dropdown-content");
     let currentDropdown;
@@ -18,7 +23,8 @@ if (window.innerWidth < 900) {
             if (e.target.classList.contains("nav-link")) {
                 // if they clicked an about link on the about page, open the blinds
                 if (e.target.classList.contains("nav-link__about") && window.location.pathname.match(/about/)) {
-                    document.getElementById("nav").classList.remove("open");
+                    document.getElementById("nav").classList.toggle("open");
+                    document.getElementsByTagName('main')[0].classList.toggle("main--shifted");
                 }
                 return;
             }
