@@ -55,13 +55,12 @@ article.content {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;    
     font-size: 15pt;
-    font-family: serif;
     width: 80vw;
     background: var(--base4);
-    font-family: "Montserrat";
+    font-family: "TwCentMT";
     box-shadow: 0 0 2vh 0.25vh #222;
     z-index: 3;
     margin-top: 5vh;
@@ -97,7 +96,7 @@ article.content > * {
 
 
 article.content h1, article.content h2, article.content h3 {
-    font-family: "Florence";
+    font-family: "LemonMilk";
     margin-bottom: 0px;
     font-weight: normal;
 }

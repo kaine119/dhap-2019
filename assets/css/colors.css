@@ -27,13 +27,13 @@
 }
 
 @font-face {
-    font-family: "Florence";
-    src: url({{ site.baseurl }}/assets/css/Florence-Regular.ttf);
+    font-family: "LemonMilk";
+    src: url({{ site.baseurl }}/assets/css/LemonMilklight.otf);
 }
 
 @font-face {
-    font-family: "Roboto Slab";
-    src: url({{ site.baseurl }}/assets/css/RobotoSlab-Regular.ttf);
+    font-family: "TwCentMT";
+    src: url({{ site.baseurl }}/assets/css/TwCenMT-Regular.woff);
 }
 
 html {
@@ -45,7 +45,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: serif;
+    font-family: "TwCentMT";
 }
 
 main {

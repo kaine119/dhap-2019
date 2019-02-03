@@ -61,12 +61,12 @@ body > header.logo--expanded #header__title {
     animation: leaf-wipe 2s ease-in-out;
     overflow-x: hidden;
     flex-wrap: none;
-    font-family: "Florence"
+    font-family: "LemonMilk"
 }
 
 @keyframes leaf-wipe {
-    from { width: 0; }
-    to { width: 40vw; }
+    from { transform: translateX(-40vw) }
+    to { transform: translateX(0); }
 }
 
 #countdown {
@@ -184,7 +184,7 @@ rect, circle {
     justify-content: center;
     text-align: center;
     flex-basis: 90%;
-    font-family: "Roboto Slab";
+    font-family: "LemonMilk";
 }
 
 .welcome__greeting h2 {
@@ -294,7 +294,7 @@ rect, circle {
         animation: fade 0.5s linear 5s;
         animation-fill-mode: both;
         color: #eee;
-        font-family: "Roboto Slab";
+        font-family: "LemonMilk";
    }
 
 
@@ -307,7 +307,7 @@ rect, circle {
         margin-top: 30vh;
         padding-top: 5vh;
         background: var(--base1);
-        font-family: "Roboto Slab";
+        font-family: "LemonMilk";
     }
 
     @keyframes fade-address {
@@ -334,14 +334,14 @@ rect, circle {
         margin-top: 0;
         margin-bottom: 0;
         font-weight: normal;
-        font-family: "Roboto Slab";
+        font-family: "LemonMilk";
     }
 
     .welcome-address__greeting h1 {
         font-size: 20vw;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: "Florence";
+        font-family: "LemonMilk";
         font-weight: normal;
     }
 
