@@ -115,7 +115,7 @@ body > header.logo--expanded #header__title {
     display: flex;
     align-items: center; 
     transform: translateX(0vw);
-    animation: slideshow 10s linear infinite;
+    animation: slideshow 12s linear infinite;
     pointer-events: none;
 }
 
@@ -245,11 +245,10 @@ body > header.logo--expanded #header__title {
     }
 }
 
-.bar {
+.bar--right {
     width: 5vw;
+    background-image: url({{ site.baseurl }}/assets/img/title_background.png);
+    background-size: cover;
+    background-position: center;
     z-index: 3;
-}
-
-.bar__middle--transparent {
-    background-image: url({{ site.baseurl }}/assets/img/side_transparent.png);
 }
