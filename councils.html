@@ -10,12 +10,12 @@ stylesheets:
 <div id="container">
     <div id="title" class="open">
         <div id="title__content">
-            <h1>Councils</h1>
+            <h1>The Executive Board</h1>
             <p>{{ site.data.paragraphs.councils_intro }}</p>
         </div>
         <div id="title__border">
             <div id="title__border__top">
-                <img src="{{ site.baseurl }}/assets/img/title_edge.png" alt="">
+                <img src="{{ site.baseurl }}/assets/img/title_edge.png" alt="" />
             </div>
             <div id="title__border__middle"></div>
             <div id="title__border__bottom">
@@ -32,15 +32,14 @@ stylesheets:
             <div class="council__slide council__title">
                 <div class="council__title--flip">
                     <div class="council__title--short" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
-                        <img src="" alt="">
                         {{ council.name_short }}
                     </div>
                     <div class="council__title--full">
                         <p>{{ council.name }}</p>
-                        <a href="{{ site.baseurl}}{{ council.url }}">
+                        <a href="{{ site.baseurl }}{{ council.url }}">
                             {% include button.html content="Read more" %}
                         </a>
-                    </div>
+                    </div>                  
                 </div>
 
             </div>

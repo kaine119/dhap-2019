@@ -17,8 +17,9 @@ body > header.logo--expanded #header__title {
 
 #content {
     height: auto;
-    padding-bottom: 10vh;
-    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     background: #E4C4B9;
     width: 65vw;
@@ -26,7 +27,7 @@ body > header.logo--expanded #header__title {
 }
 
 #title {
-    height: 90vh;
+    height: 92.5vh;
     width: 30vw;
     transform: translateX(-30vw);
     transition: transform 0.5s ease-in-out;
@@ -89,7 +90,9 @@ body > header.logo--expanded #header__title {
 
 #title__content {
     padding: 3vw;
-    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #container {
@@ -100,8 +103,6 @@ body > header.logo--expanded #header__title {
 }
 
 .council {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     height: 45vh;
     width: auto;
     display: flex;
@@ -148,7 +149,6 @@ body > header.logo--expanded #header__title {
     position: relative;
     transition: all 0.5s ease;
     transform-style: preserve-3d;
-    backface-visibility: hidden;
     height: 100%;
     width: 100%;
 }
@@ -167,7 +167,6 @@ body > header.logo--expanded #header__title {
     position: absolute;
     height: 100%;
     width: 80%;
-    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -176,13 +175,19 @@ body > header.logo--expanded #header__title {
     font-size: 20pt;
     color: #eee;
     background: var(--base2);
+    backface-visibility: hidden;
 }
+
+.council__title:hover council__title--full {
+    backface-visibility: visible;
+}
+
+
 
 .council__title--short {
     position: absolute;
     height: 100%;
     width: 100%;
-    backface-visibility: hidden;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -192,6 +197,7 @@ body > header.logo--expanded #header__title {
     color: #222;
     font-family: "Florence";
     background: var(--accent1);
+    backface-visibility: hidden;
 }
 
 @media screen and (max-width: 1000px) {
