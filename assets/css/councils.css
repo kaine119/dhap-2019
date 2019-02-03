@@ -126,7 +126,7 @@ body > header.logo--expanded #header__title {
     display: flex;
     align-items: center; 
     transform: translateX(0vw);
-    animation: slideshow 12s linear infinite;
+    animation: slideshow 15s linear infinite;
     pointer-events: none;
 }
 
@@ -220,7 +220,7 @@ body > header.logo--expanded #header__title {
     backface-visibility: hidden;
 }
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
     #container {
         flex-direction: column;
     }    
