@@ -19,6 +19,17 @@ body > header.logo--expanded #header__title {
     padding-left: 2.5vw;
 }
 
+@media screen and (max-width: 1000px) {
+    body > header.logo--expanded #logo {
+        width: 12vh;
+        height: 12vh;
+    }
+
+    body > header.logo--expanded #toggle .menu-line {
+        background: #222;
+    }
+}
+
 
 #content {
     height: auto;
@@ -209,39 +220,23 @@ body > header.logo--expanded #header__title {
     backface-visibility: hidden;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {}
+    #container {
+        flex-direction: column;
+    }    
+
     #title {
-        position: relative;
-        width: 90vw;
+        width: 100vw;
         height: auto;
-        transform: translateX(0px);
     }
 
     #content {
         width: 100vw;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
 
-    .council {
-        height: 40vh;
-        margin-top: 20vh;
-        margin-bottom: 20vh;
-    }
-
-    @keyframes slideshow {
-        from { transform: translateX(0); }
-        /* translateX value: (width + total margins) * 3; */
-        to { transform: translateX(calc(-120vh - 45vw)); }
-    }
-
-    .council__slide {
-        height: 40vh;
-        width: 40vh;
-
-    }
-
-    .council__title--full {
-        font-size: 3vh;
+    .bar-right {
+        display: none;
     }
 }
 

@@ -18,6 +18,17 @@ body > header.logo--expanded #header__title {
     padding-left: 2.5vw;
 }
 
+@media screen and (max-width: 1000px) {
+    body > header.logo--expanded #logo {
+        width: 12vh;
+        height: 12vh;
+    }
+
+    body > header.logo--expanded #toggle .menu-line {
+        background: #222;
+    }
+}
+
 #hero {
     height: 92.5vh;
     width: 100%;
