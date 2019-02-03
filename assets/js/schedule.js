@@ -14,7 +14,8 @@ let updateProgress = function() {
     progressText.innerText = "100%";
   } else if (now < startTime) {
     progressBar.style.width = "0%";
-    progressText.innerText = "0%"
+    progressText.style.fontSize = "20pt";
+    progressText.innerText = "DHAP starts 6 June"
   } else {
     let currentProgress = now - startTime;
     let percent = Math.floor(currentProgress / totalProgress * 100);

@@ -1,5 +1,5 @@
 #progressbar {
-    width: 50%;
+    width: 45vw;
     height: 7vmin;
     color: #222;
     background: var(--accent1);
@@ -43,4 +43,5 @@
     font-size: 7vmin;
     padding-left: 3vw;
     padding-right: 3vw;
+    min-width: 50vw;
 }
