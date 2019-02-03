@@ -227,7 +227,7 @@ rect, circle {
         background-size: auto 100vh;
         background-repeat: no-repeat;
         background-position: center top;
-        animation: prevent-scroll 0.2s linear 5s;
+        animation: prevent-scroll 0.2s linear 3s;
         animation-fill-mode: both;
         padding-top: 20vh;
     }
@@ -280,7 +280,7 @@ rect, circle {
 
     #welcome-address__scroll-prompt {
         position: absolute;
-        top: 70vh;
+        top: 60vh;
         height: 18vh;
         padding-bottom: 2vh;
         width: 100vw;
@@ -289,8 +289,8 @@ rect, circle {
         justify-content: center;
         text-align: center;
         font-size: 20pt;
-        background: linear-gradient(to top, rgba(var(--base1), 1), rgba(var(--base1), 0));
-        animation: fade 0.5s linear 5s;
+        background: linear-gradient(to top, var(--base4) 75%, rgba(0, 0, 0, 0));
+        animation: fade 0.5s linear 3s;
         animation-fill-mode: both;
         color: #eee;
         font-family: "LemonMilk";
@@ -299,14 +299,14 @@ rect, circle {
 
     #welcome-address-container {
         display: block;
-        animation: fade 0.5s linear 5s, fade-address 0s linear 5s;
+        animation: fade 0.5s linear 3s, fade-address 0s linear 3s;
         animation-fill-mode: both;
         width: 100vw;
         height: auto;
-        margin-top: 30vh;
+        margin-top: 20vh;
         padding-top: 5vh;
-        background: var(--base1);
-        font-family: "LemonMilk";
+        background: var(--base4);
+        font-family: "TwCentMT";
     }
 
     @keyframes fade-address {
@@ -317,7 +317,7 @@ rect, circle {
     #welcome-address {
         padding: 5vw;
         height: auto;
-        color: #eee;
+        color: #222;
     }
 
     .welcome-address__greeting {
@@ -351,7 +351,6 @@ rect, circle {
         height: auto;
         padding-left: 1vw;
         padding-right: 1vw;
-        color: black;
         color: var(--accent2);
     }
 

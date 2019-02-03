@@ -53,23 +53,16 @@ scripts:
     </div>
 
     <div id="welcome-address__scroll-prompt">
+        Welcome to DHAP 2019 <br>
         Scroll for more
     </div>
 
     <div id="welcome-address-container">
         <div id="welcome-address">
-            <div class="welcome-address__greeting">
-                <h2>Welcome to</h2>
-                <h1>DHAP</h1>
-                <h2>2019</h2>
-            </div>
-
             <div class="welcome-address__title">
                 <h1>Welcome address</h1>
             </div>
-            <p>
-                {{ site.data.paragraphs.welcome_address }}
-            </p>
+            {{ site.data.paragraphs.welcome_address | markdownify }}
         </div>
     </div>
 
