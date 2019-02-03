@@ -156,7 +156,7 @@ body > header.logo--expanded #header__title {
 
 .council__title--full {
     transform: rotateY(180deg);
-    background: rgb(var(--base2));
+    background: var(--base2);
     padding-left: 10%;
     padding-right: 10%;
     position: absolute;

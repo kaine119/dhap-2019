@@ -279,7 +279,7 @@ rect, circle {
         height: auto;
         margin-top: 30vh;
         padding-top: 5vh;
-        background: rgb(var(--base1));
+        background: var(--base1);
         font-family: "Roboto Slab";
     }
 
@@ -326,7 +326,7 @@ rect, circle {
         padding-left: 1vw;
         padding-right: 1vw;
         color: black;
-        color: rgb(var(--accent2));
+        color: var(--accent2);
     }
 
 }

@@ -17,11 +17,13 @@
     /* Slightly lighter base color, used for button backgrounds? */
     --base2: rgb(77, 101, 153);
     /* Much lighter base color, used for text background */
-    --base3: 231, 251, 255;
-    /* Lighter accent color, for inline links */
-    --accent1: 247, 158, 118;
+    --base3: rgb(231, 251, 255);
+    /* Light orange-ish background for content */
+    --base4: #E4C4B9;
+    /* Lighter accent color, for content background */
+    --accent1: #f79e76;
     /* More intense accent, for highlighted blocks */
-    --accent2: 199, 59, 31;
+    --accent2: #C73B1F;
 }
 
 @font-face {

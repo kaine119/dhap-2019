@@ -1,5 +1,5 @@
 .button {
-    background: rgb(var(--accent2));
+    background: var(--accent2);
     padding: 10px;
     color: #eee;
     font-family: "Roboto Slab";

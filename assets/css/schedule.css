@@ -2,7 +2,7 @@
     width: 50%;
     height: 7vmin;
     color: #222;
-    background: rgb(var(--accent1));
+    background: var(--accent1);
     overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
     display: inline-block;
     height: 100%;
     width: 0;
-    background: rgb(var(--accent2));
+    background: var(--accent2);
     display: flex;
     justify-content: flex-start;
     align-items: center;

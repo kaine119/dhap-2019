@@ -69,7 +69,7 @@ nav {
 }
 
 .nav-button {
-    border-right: 5px solid rgb(var(--accent1));
+    border-right: 5px solid var(--accent1);
     height: 10vh;
     width: 10vw;
     overflow-x: visible;
@@ -114,7 +114,7 @@ nav {
 .nav-link {
     text-transform: uppercase;
     padding: 1vw;
-    border-bottom: 5px rgb(var(--accent1)) solid;
+    border-bottom: 5px var(--accent1) solid;
     background: var(--base2);
     width: auto;
     /*color: var(--base2);*/
@@ -152,7 +152,7 @@ nav {
         height: 0vh;
         overflow-y: scroll;
         z-index: 1000;
-        border-bottom: 5px solid rgb(var(--accent1));
+        border-bottom: 5px solid var(--accent1);
         transition: height 0.5s ease-in;
     }
 
@@ -183,8 +183,8 @@ nav {
     .nav-button {
         height: auto;
         padding: 1vh;
-        border-bottom: rgb(var(--base2)) 2px solid;
-        background: rgb(var(--base1));
+        border-bottom: var(--base2) 2px solid;
+        background: var(--base1);
         cursor: auto;
     }
 
