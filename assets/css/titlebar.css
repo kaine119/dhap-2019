@@ -2,7 +2,7 @@
 ---
 
 #page-title {
-    width: 100%;
+    width: 80vw;
     padding: 0;
     height: auto;
     min-height: 30vh;
@@ -36,5 +36,10 @@
     color: #fff;
     text-shadow: 0 0 30px #111;
     text-align: center;
-    filter: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #page-title {
+        width: 85vw;
+    }
 }

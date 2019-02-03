@@ -59,7 +59,7 @@ article.content {
     align-items: flex-start;    
     font-size: 15pt;
     font-family: serif;
-    width: 90vw;
+    width: 80vw;
     background: var(--base4);
     font-family: "Montserrat";
     box-shadow: 0 0 2vh 0.25vh #222;
@@ -67,18 +67,23 @@ article.content {
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding-bottom: 5vh;
+    word-wrap: break-word;
 }
 
 article.content > * {
     padding-left: 5vw;
     padding-right: 5vw;
+    max-width: 80vw;
 }
 
 @media screen and (max-width: 1000px) {
     article.content {
-        width: 75vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        width: 85vw;
+        margin-top: 2.5vh;
+    }
+
+    article.content > * {
+        max-width: 85vw;
     }
 
     .bar--left {
