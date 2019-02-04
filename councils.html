@@ -8,44 +8,40 @@ stylesheets:
 
 
 <div id="container">
-    <div id="title" class="open">
+    <div id="title">
         <div id="title__content">
             <h1>The Executive Board</h1>
             <p>{{ site.data.paragraphs.councils_intro }}</p>
         </div>
-    </div>
-    <div id="content">
-        <div class="council">
-            {% for i in (0..1) %}
+        <div id="title__arrow">
+            <svg width="10" height="20" version="1.1" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(0 -291.71)">
+                    <path d="m0 291.71 2.6458 2.6458-2.6458 2.6458" fill="none" stroke-width=".26458"/>
+                </g>
+            </svg>
 
-            {% for council in site.councils %}
-            
-            <div class="council__slide council__title">
-                <div class="council__title--flip">
-                    <div class="council__title--short" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
-                        {{ council.name_short }}
-                    </div>
-                    <div class="council__title--full">
-                        <p>{{ council.name }}</p>
-                        <a href="{{ site.baseurl }}{{ council.url }}">
-                            {% include button.html content="Read more" %}
-                        </a>
-                    </div>                  
-                </div>
-
-            </div>
-        
-            {% endfor %}
-
-            {% endfor %}
-        
         </div>
+    </div>
+
+    <div id="content">
+
+        {% for council in site.councils %}
+
+        <div class="council" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
+            <div class="council__name">
+                <div class="council__name__long">
+                    {{ council.name }}
+                </div>
+                <a href="{{ site.baseurl }}{{ council.url }}">
+                    {% include button.html content="Read more" classes="council__link" %}
+                </a>
+            </div>
+        </div>
+
+        {% endfor %}
+        
         
     </div>
 
-    
-    <div class="bar--right">
-        
-    </div>
 </div>
 

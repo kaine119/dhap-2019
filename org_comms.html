@@ -3,51 +3,37 @@ layout: default
 title: Organising Committees
 stylesheets: 
     - content.css
-    - councils.css
     - org_comms.css
-scripts:
-    - councils.js
 ---
 
 
 <div id="container">
-    <div id="title" class="open">
+    <div id="title">
         <div id="title__content">
             <h1>Organising Committees</h1>
             <p>{{ site.data.paragraphs.org_committees_intro }}</p>
         </div>
     </div>
+
     <div id="content">
-        <div class="council">
-            {% for i in (0..1) %}
 
-            {% for comm in site.org_committees %}
-            
-            <div class="council__slide council__title">
-                <div class="council__title--flip">
-                    <div class="council__title--short" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ comm.image_name }})">
-                        {{ comm.name }}
-                    </div>
-                    <div class="council__title--full">
-                        <p>{{ comm.name }}</p>
-                        <a href="{{ site.baseurl }}{{ comm.url }}">
-                            {% include button.html content="Read more" %}
-                        </a>
-                    </div>                  
+        {% for comm in site.org_committees %}
+
+        <div class="council" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ comm.image_name }})">
+            <div class="council__name">
+                <div class="council__name__long">
+                    {{ comm.name }}
                 </div>
-
+                <a href="{{ site.baseurl }}{{ comm.url }}">
+                    {% include button.html content="Read more" classes="council__link" %}
+                </a>
             </div>
-        
-            {% endfor %}
-
-            {% endfor %}
-        
         </div>
+
+        {% endfor %}
+        
         
     </div>
 
-    
-    <div class="bar--right">
-        
-    </div>
 </div>
+
