@@ -7,8 +7,8 @@
     padding-top: 10vh;
     height: auto;
     min-height: 30vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, var(--base4));
     position: relative;
+    z-index: 2;
 }
 
 #page-title__gradient {
@@ -19,7 +19,7 @@
     background-size: cover;
     position: absolute;
     top: 0px; left: 0px;
-    z-index: 1;
+    z-index: 0;
 }
 
 #page-title__content {
@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, var(--base4));
     font-family: "LemonMilk";
     z-index: 2;
 }
