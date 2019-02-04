@@ -3,6 +3,19 @@ name: Historical Crisis Committee
 name_short: HCC
 image_name: hcc.jpg
 ---
-Something about HCC. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex asperiores at ipsam saepe magnam ullam repudiandae sint qui pariatur itaque harum praesentium quidem, molestias nulla illo soluta? Quibusdam blanditiis, veniam.
 
-This will only show up on each council's page. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum rerum corporis earum, possimus mollitia atque, animi accusantium fuga nam unde! Placeat molestias, numquam eos harum omnis officia! Amet et maxime veniam animi asperiores harum veritatis repudiandae, ipsum, architecto? Nemo necessitatibus eligendi distinctio molestias ullam eos doloribus quibusdam dolore voluptate repellat, molestiae, modi deserunt culpa doloremque, aliquid iste quia hic veniam similique corrupti in! Optio deleniti maiores alias necessitatibus mollitia nostrum inventore doloribus natus repellat, provident eius totam pariatur ipsum quibusdam dolorum, explicabo cupiditate in neque incidunt molestiae fugit placeat sint? Dicta asperiores sint corrupti non, dolore vitae pariatur fugiat!
+## Coming soon
+
+<!-- In the latest instalment of the much-loved Historical Crisis Committee,
+delegates will traverse time and find themselves at outset of the
+Battle for Malaya during WWII. Delegates will be conferred the
+roles of prominent officials within the British military and civilian
+government, and they will face the formidable challenge of
+repelling the impending Japanese invasion. Much will be at stake,
+for the island of Singapore, located at the tip of the Malayan
+peninsula, was a major British military base and a cornerstone of
+British imperial defence planning. Delegates will experience the
+thrill of engaging in combat amidst dealing with pressing economic
+and social issues. Delegates must challenge themselves to act swiftly,
+decisively and effectively, for the security of Malaya lies in their
+hands. -->
