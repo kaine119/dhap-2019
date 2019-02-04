@@ -5,9 +5,14 @@
     margin-top: 5vh;
 }
 
+.person:nth-child(even) {
+    flex-direction: row;
+    text-align-last: left;
+}
+
 .person:nth-child(odd) {
     flex-direction: row-reverse;
-    text-align: right;
+    text-align-last: right;
 }
 
 .person__image {
