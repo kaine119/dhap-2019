@@ -1,29 +1,33 @@
-<header class="logo--expanded">
+<header>
 
-    <a href="{{ site.baseurl }}/">
-        <div id="logo"></div>
+    <a href="{{ site.baseurl }}/" id="logo">
+        <img src="{{ site.baseurl }}/assets/img/logo.png"/>
     </a>
     
     <a href="{{ site.baseurl }}/">
         <div id="header__title">
-            <h1>Dunman High Model ASEAN Plus Summit</h1>
+            <h1>DHAP 2019</h1>
         </div>
     </a>
 
-    <div id="toggle">
-        <div class="menu-line" id="menu-line-1"> </div>
-        <div class="menu-line" id="menu-line-2"> </div>
-        <div class="menu-line" id="menu-line-3"> </div>
-    </div>
+    <div id="toggle"></div>
     
     <nav id="nav">
-       <div class="nav-button">
+        <div id="close"></div>
+
+        <div class="nav__logo">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/assets/img/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav-button">
             <a href="{{ site.baseurl }}/about.html">
                 <div class="nav-button__title">About</div>
             </a>
             <div class="dropdown-content">
                 <a href="{{ site.baseurl }}/welcome_address.html">
-                    <div class="nav-link nav-link__about">Welcome Address</div>
+                    <div class="nav-link">Welcome Address</div>
                 </a>
                 <a href="{{ site.baseurl }}/about.html">
                     <div class="nav-link nav-link__about">Theme</div>
@@ -31,6 +35,9 @@
                 <a href="{{ site.baseurl }}/about.html#faqs">
                     <div class="nav-link nav-link__about">FAQs</div>
                 </a>
+                <div class="nav-link">
+                    Delegate Resources
+                </div>
             </div>
         </div>
 

@@ -1,36 +1,5 @@
 ---
 ---
-
-body > header.logo--expanded {
-    background: #fff;
-    color: #222;
-}
-
-body > header.logo--expanded #logo {
-    width: 7.5vh;
-    height: 7.5vh;
-}
-
-#header__title {
-    padding-left: 2.5vw;
-}
-
-body > header.logo--expanded #header__title {
-    padding-left: 2.5vw;
-}
-
-@media screen and (max-width: 1000px) {
-    body > header.logo--expanded #logo {
-        width: 12vh;
-        height: 12vh;
-    }
-
-    body > header.logo--expanded #toggle .menu-line {
-        background: #222;
-    }
-}
-
-
 #content {
     height: auto;
     display: flex;

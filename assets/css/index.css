@@ -1,38 +1,14 @@
 ---
 ---
-body > header.logo--expanded {
-    background: #fff;
-    color: #222;
-}
-
-body > header.logo--expanded #logo {
-    width: 7.5vh;
-    height: 7.5vh;
-}
 
 #header__title {
     padding-left: 2.5vw;
 }
 
-body > header.logo--expanded #header__title {
-    padding-left: 2.5vw;
-}
-
-@media screen and (max-width: 1000px) {
-    body > header.logo--expanded #logo {
-        width: 12vh;
-        height: 12vh;
-    }
-
-    body > header.logo--expanded #toggle .menu-line {
-        background: #222;
-    }
-}
-
 #hero {
     height: 92.5vh;
     width: 100%;
-    background-image: url({{ site.baseurl }}/assets/img/title_background.png);
+    /*background-image: url({{ site.baseurl }}/assets/img/title_background.png);*/
     background-position: center;
     background-size: cover;
     display: flex;

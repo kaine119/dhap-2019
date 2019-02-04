@@ -1,16 +1,24 @@
 if (window.innerWidth < 900) {
     document.getElementById('toggle').onclick = function() {
         let main = document.getElementsByTagName('main')[0];
-        main.classList.toggle("main--shifted")
-
+        main.classList.toggle("shifted");
         let nav = document.getElementById("nav");
         nav.classList.toggle("open");
+
+        let body = document.getElementsByTagName('body')[0];
+        body.classList.toggle("noscroll");
+
+
     };
 
-    document.getElementsByTagName('main')[0].onclick = function() {
-        this.classList.remove("main--shifted")
-        document.getElementById('nav').classList.remove('open');
-    }
+    document.getElementById('close').onclick = function() {
+        let main = document.getElementsByTagName('main')[0];
+        main.classList.toggle("shifted");
+        let nav = document.getElementById("nav");
+        nav.classList.toggle("open");
+        let body = document.getElementsByTagName('body')[0];
+        body.classList.toggle("noscroll");
+    };
 
     let navButtons = document.getElementsByClassName('nav-button');
     let dropdowns = document.getElementsByClassName("dropdown-content");
@@ -24,7 +32,8 @@ if (window.innerWidth < 900) {
                 // if they clicked an about link on the about page, open the blinds
                 if (e.target.classList.contains("nav-link__about") && window.location.pathname.match(/about/)) {
                     document.getElementById("nav").classList.toggle("open");
-                    document.getElementsByTagName('main')[0].classList.toggle("main--shifted");
+                    document.getElementsByTagName('main')[0].classList.toggle("shifted");
+                    document.getElementsByTagName('body')[0].classList.toggle("noscroll");
                 }
                 return;
             }
@@ -55,17 +64,3 @@ if (window.innerWidth < 900) {
         }
     }
 }
-
-let updateLogo = debounce(function(positionY) {
-    if (positionY == 0) {
-        document.getElementsByTagName('header')[0].classList.add("logo--expanded")
-    } else {
-        document.getElementsByTagName('header')[0].classList.remove("logo--expanded")
-    }
-});
-
-updateLogo(window.scrollY);
-
-window.addEventListener('scroll', function() {
-    updateLogo(window.scrollY)
-});
