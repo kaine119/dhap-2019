@@ -3,6 +3,8 @@ title: Welcome Address
 layout: content
 ---
 
+{% include titlebar.html title="Welcome Address" image="about.jpg" %}
+
 {{ site.data.paragraphs.welcome_address }}
 
 <div id="signoff">

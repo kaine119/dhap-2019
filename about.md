@@ -3,6 +3,8 @@ layout: content
 title: About DHAP
 ---
 
+{% include titlebar.html title="About DHAP" %}
+
 # Theme
 The theme for DHAP 2019 is “Interconnections”. This theme is a recognition of the broad
 and deep relationships between ASEAN Member States (AMS), which span across many
