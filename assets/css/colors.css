@@ -19,7 +19,7 @@
     /* Much lighter base color, used for text background */
     --base3: rgb(187, 218, 234);
     /* Light orange-ish background for content */
-    --base4: #E4C4B9;
+    --base4: #fff;
     /* Lighter accent color, for content background */
     --accent1: #f79e76;
     /* More intense accent, for highlighted blocks */
@@ -46,6 +46,15 @@ body {
     padding: 0;
     max-width: 100%;
     font-family: "TwCentMT";
+    background: url({{ site.baseurl }}/assets/img/background.png);
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-size: 200% auto;
+    }
 }
 
 main {
