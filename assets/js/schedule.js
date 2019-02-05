@@ -1,33 +1,28 @@
----
----
-let progressBar = document.getElementById('progressbar__filled');
-let progressText = document.getElementById('progressbar__label');
+let dates = document.getElementsByClassName("schedule__day__title");
+let events = document.getElementsByClassName("schedule__day__event");
 
-let startTime = new Date("{{ site.dates.start_time }}");
-let endTime = new Date("{{ site.dates.end_time }}");
-let totalProgress = endTime - startTime;
+let updateSchedule = function(time) {
+    for (var i = 0; i < dates.length; i++) {
+        let date = dates[i].dataset.date;
+        if (!date) { continue; }
 
-let updateProgress = function() {
-  let now = new Date();
-  if (now > endTime) {
-    progressBar.style.width = "100%";
-    progressText.innerText = "100%";
-  } else if (now < startTime) {
-    progressBar.style.width = "0%";
-    progressText.style.fontSize = "20pt";
-    progressText.innerText = "DHAP starts 6 June"
-  } else {
-    let currentProgress = now - startTime;
-    let percent = Math.floor(currentProgress / totalProgress * 100);
-    let percentText = percent.toString() + "%";
-    progressBar.style.width = percentText;
-    progressText.innerText = percentText;
-    if (percent > 50) {
-      progressBar.classList.add("over_50")
+        let eventDate = new Date(date);
+        let currentTime = new Date();
+        if (currentTime > eventDate) {
+            dates[i].classList.add("filled");
+        }
     }
-  }
+
+    for (var i = 0; i < events.length; i++) {
+        let event = events[i].dataset.time;
+        if (!event) { continue; }
+
+        let eventDate = new Date(event);
+        let currentTime = new Date();
+        if (currentTime > eventDate) {
+            events[i].classList.add("filled");
+        }
+    }
 }
 
-updateProgress();
-
-setInterval(updateProgress, 60000)
+updateSchedule()
