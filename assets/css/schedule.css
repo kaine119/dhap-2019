@@ -1,16 +1,19 @@
-article.content {
-    align-items: center;
-}
-
 ul {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+.wrapper {
+    width: 100%;
+}
+
 .schedule {
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 li {
@@ -33,7 +36,7 @@ li {
 }
 
 .schedule__day__title h2 {
-    font-size: 1em;
+    font-size: 2em;
     margin-top: 0px;
     width: auto;
     text-align: left !important;
@@ -56,7 +59,7 @@ li {
     display: flex;
     align-items: center;
     left: -27px;
-    font-size: 20px;
+    font-size: 22px;
     width: auto;
     flex-grow: 0;
 }
@@ -106,9 +109,15 @@ li {
 }
 
 @media screen and (max-width: 1000px) {
+
+    article.content {
+        align-items: center;
+    }
+
     .schedule {
         width: auto;
         padding-left: 50px !important;
+        flex-direction: column;
     }
 
     .wrapper {
@@ -123,5 +132,25 @@ li {
 
     .wrapper {
         overflow-x: auto;
+    }
+
+    .schedule__day__title h2 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .schedule__day__last {
+        display: none;
+    }
+
+    .schedule__day__event:last-child::before {
+        clip-path: polygon(25% 0%, 
+                        50% 0%, 
+                        50% 52.5%, 
+                        100% 52.5%, 
+                        100% 60%, 
+                        25% 60%);
     }
 }
