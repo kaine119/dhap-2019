@@ -28,7 +28,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    left: -40px;
+    left: -37px;
     height: 40px;
 }
 
@@ -41,12 +41,11 @@ li {
 
 .schedule__day__title::before {
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
-    border: 2px solid #222;
     background: #999;
-    margin-right: 5px;
+    margin-right: 10px;
     flex-shrink: 0;
     z-index: 1;
     transition: background 0.5s ease-in-out;
@@ -56,7 +55,7 @@ li {
     position: relative;
     display: flex;
     align-items: center;
-    left: -25px;
+    left: -27px;
     font-size: 20px;
     width: auto;
     flex-grow: 0;
@@ -69,8 +68,8 @@ li {
     line-height: 0px;
     width: 20px;
     background: #999;
-    margin-right: 10px;
-    margin-top: -2px;
+    margin-right: 12px;
+    margin-top: -7px;
     flex-shrink: 0;
     z-index: 0;
     clip-path: polygon(25% 0%, 
@@ -87,7 +86,7 @@ li {
 
 .schedule__day__event:last-child::before {
     padding-top: 1px;
-    margin-bottom: -1px;
+    margin-bottom: -3px;
 }
 
 .schedule__day__event p {
