@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/titlebar.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/footer.css">
-    {% for stylesheet in page.stylesheets %}
+    {% for stylesheet in layout.stylesheets %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}">
     {% endfor %}
-    {% for stylesheet in layout.stylesheets %}
+    {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}">
     {% endfor %}
 

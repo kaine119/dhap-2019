@@ -2,26 +2,40 @@
 layout: content
 title: Schedule
 stylesheets:
-    - content.css
     - schedule.css
-scripts:
-    - schedule.js
 ---
 
-{% capture progressbar %}
+{% include titlebar.html title=page.title %}
 
-<div id="progressbar">
-    <div id="progressbar__filled">
-        <div id="progressbar__padding"></div>
-        <div id="progressbar__label"></div>
-    </div>
+<div class="wrapper">
+    <ul class="schedule">
 
+        {% for day in site.data.schedule %}
+        <li class="schedule__day">
+            
+            <div class="schedule__day__title" data-date="{{ day.date }}">
+                <h2>{{ day.date | date_to_string }}</h2>
+            </div>
+            
+            <ul class="schedule__day__events">
+                {% for event in day.events %}
+                <li class="schedule__day__event" data-time="{{ event.time }}">
+                    <p><span class="schedule__time">{{ event.time }}</span> {{ event.event }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </li>
+        
+        {% endfor %}
+
+        <li class="schedule__day">
+            
+            <div class="schedule__day__title">
+                <h2>End of DHAP 2019</h2>
+            </div>
+        </li>
+        
+    </ul>
 </div>
 
-{% endcapture %}
-
-{% include titlebar.html title=page.title extra_content=progressbar %}
-
-<div class="content__background"></div>
-<h1>Day 1</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorum quibusdam repudiandae ab velit earum maiores laudantium dolores eligendi, veniam perspiciatis temporibus accusamus eius, incidunt! Ducimus molestias eveniet impedit ex itaque repellendus nulla. Distinctio minima iste quae odio delectus illum id debitis dolore consequuntur voluptate inventore a possimus, repellendus, nostrum.</p>

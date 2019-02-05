@@ -1,48 +1,128 @@
-#progressbar {
-    width: 45vw;
-    height: 7vmin;
-    color: #222;
-    background: var(--accent1);
-    overflow: hidden;
+article.content {
+    align-items: center;
 }
 
-@media screen and (max-width: 900px) {
-    #progressbar {
-        width: 80%;
-    }
+ul {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#progressbar__filled {
-    display: inline-block;
-    height: 100%;
-    width: 0;
-    background: var(--accent2);
+.schedule {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.schedule__day {
+    width: auto;
+}
+
+.schedule__day__title {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: width 0.5s ease-in-out;
+    height: auto;
+    left: -40px;
+    height: 40px;
 }
 
-#progressbar__padding {
-    width: 100%;
+.schedule__day__title h2 {
+    font-size: 1em;
+    margin-top: 0px;
+    width: auto;
+    text-align: left !important;
+}
+
+.schedule__day__title::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #999;
+    margin-right: 5px;
     flex-shrink: 0;
-    height: 100%;
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
 }
 
-#progressbar__filled.over_50 {
-    justify-content: flex-end;
-    color: #eee;
+.schedule__day__event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -25px;
+    font-size: 20px;
+    width: auto;
+    flex-grow: 0;
 }
 
-#progressbar_filled.over_50 #progressbar__padding {
-    width: 0%;
+.schedule__day__event::before {
+    content: "";
+    height: auto;
+    align-self: stretch;
+    line-height: 0px;
+    width: 20px;
+    background: #999;
+    margin-right: 10px;
+    margin-top: -2px;
+    flex-shrink: 0;
+    z-index: 0;
+    clip-path: polygon(25% 0%, 
+                        50% 0%, 
+                        50% 50%, 
+                        100% 50%, 
+                        100% 60%, 
+                        50% 60%, 
+                        50% 100%, 
+                        25% 100%);
+    transition: background 0.5s ease-in-out;
 }
 
-#progressbar__label {
-    display: inline-block;
-    font-size: 7vmin;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    min-width: 50vw;
+
+.schedule__day__event:last-child::before {
+    padding-top: 1px;
+    margin-bottom: -1px;
+}
+
+.schedule__day__event p {
+    margin: 0;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    text-align: left !important;
     white-space: nowrap;
+}
+
+.schedule__time {
+    color: #888;
+}
+
+.filled::before {
+    background: var(--accent2);
+}
+
+@media screen and (max-width: 1000px) {
+    .schedule {
+        width: auto;
+        padding-left: 50px !important;
+    }
+
+    .wrapper {
+        padding: 0px !important;
+        width: 100%;
+        height: auto;
+    }
+
+    .schedule__day__event p {
+        padding-right: 5vw;
+    }
+
+    .wrapper {
+        overflow-x: auto;
+    }
 }
