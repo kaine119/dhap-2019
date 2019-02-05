@@ -79,7 +79,7 @@
     margin-right: 1.5vw;
 }
 
-svg {
+#hero svg {
     position: absolute;
     top: -1vw;
     left: -1vw;
@@ -230,7 +230,7 @@ rect, circle {
         justify-content: space-around;
     }
 
-    svg {
+    #hero svg {
         display: none;
     }
 
@@ -327,6 +327,7 @@ rect, circle {
         height: auto;
         padding-left: 1vw;
         padding-right: 1vw;
+        text-align: center;
         color: var(--accent2);
     }
 
