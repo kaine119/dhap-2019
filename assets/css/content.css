@@ -72,6 +72,10 @@ article.content .image img {
     width: 30vw;
 }
 
+article.content > ul {
+    margin-left: 5vw;
+}
+
 @media screen and (max-width: 1000px) {
     article.content {
         width: 100vw;

@@ -7,9 +7,9 @@ layout: content
 
 # Email and Social Media
 
-Please direct any queries to **aseanplus.communications@dhs.sg.**
+Please direct any queries to **aseanplus.communications@dhs.sg**.
 
-You can also reach us on [Facebook]({{ site.facebook_url }}) and [Instagram]({{ site.instagram__url }})
+You can also reach us on [Facebook]({{ site.facebook_url }}) and [Instagram]({{ site.instagram_url }}).
 
 # Directions
 
