@@ -3,6 +3,6 @@ name: Publicity
 image_name: publicity.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quo vitae maiores molestiae suscipit quod nostrum perspiciatis quia, dolor pariatur ipsum sed quas, tempora nulla asperiores ex perferendis, enim iusto!
+The Publicity subcommittee keeps delegates up to date with the latest news about DHAP on various social media platforms, such as Instagram and Facebook. Besides posting beautifully edited photos, their posts also make sure that delegates are well-informed and prepared!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rerum, maiores eligendi dicta quasi delectus asperiores adipisci similique iusto blanditiis neque enim cumque, vitae? Alias officiis culpa commodi porro sed.
+The team looks forward to meeting delegates at DHAP 2019 and updating real-time stories of DHAP happenings on the Instagram page.

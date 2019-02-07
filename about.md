@@ -5,7 +5,12 @@ title: About DHAP
 
 {% include titlebar.html title="About DHAP" %}
 
+The Dunman High Model ASEAN Plus Summit (DHAP) is the flagship event of Dunman High School’s International and Strategic Affairs Council (ISAC) with a trademark on ASEAN. The summit brings together about 200 young people from the Southeast Asian region and beyond. Delegates engage in intellectually stimulating debates on pertinent regional and global issues that revolve around the United Nations and ASEAN. Through a series of debates, six councils ranging from regional to international committees will come up with realistic solutions to resolve issues faced by the world. Organised by ISAC members annually, DHAP has been and continues to be a key platform for ISAC members to develop their leadership potential, enrich their global perspective, and forge meaningful friendships with like-minded youth outside of Dunman High School.
+
 # Theme
+
+![DHAP logo]({{ site.baseurl }}/assets/img/logo.png)
+
 The theme for DHAP 2019 is “Interconnections”. This theme is a recognition of the broad
 and deep relationships between ASEAN Member States (AMS), which span across many
 fronts - including, inter alia, national security, trade, and a common regional history. At

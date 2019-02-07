@@ -3,6 +3,6 @@ name: Project Planning
 image_name: project_planning.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quo vitae maiores molestiae suscipit quod nostrum perspiciatis quia, dolor pariatur ipsum sed quas, tempora nulla asperiores ex perferendis, enim iusto!
+The Project Planning subcommittee helms the various ceremonies throughout your DHAP 2019 journey - spanning from the Opening Ceremony to Dinner and the Closing Ceremony. They promise to make delegates’ DHAP experience one worth remembering beyond council sessions with the various ceremonies! 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rerum, maiores eligendi dicta quasi delectus asperiores adipisci similique iusto blanditiis neque enim cumque, vitae? Alias officiis culpa commodi porro sed.
+They look forward to meeting delegates at DHAP 2019 and hope that delegates will have a fulfilling and fun time.
