@@ -47,14 +47,14 @@
                     <div class="nav-link">Welcome Address</div>
                 </a>
                 <a href="{{ site.baseurl }}/about.html">
+                    <div class="nav-link nav-link__about">About DHAP</div>
+                </a>
+                <a href="{{ site.baseurl }}/about.html#theme">
                     <div class="nav-link nav-link__about">Theme</div>
                 </a>
-                <a href="{{ site.baseurl }}/about.html#faqs">
-                    <div class="nav-link nav-link__about">FAQs</div>
+                <a href="{{ site.baseurl }}/secretariat.html">
+                    <div class="nav-link">The Secretariat</div>
                 </a>
-                <div class="nav-link">
-                    Delegate Resources
-                </div>
             </div>
         </div>
 
@@ -67,10 +67,16 @@
                     <div class="nav-link">Overview</div>
                 </a>
                 {% for council in site.councils %}
-                <a href="{{ site.baseurl }}{{ council.url }}">
-                    <div class="nav-link">{{ council.name_short }}</div>
-                </a>    
+                    {% if council.name != "Special Programmes" %}
+                    <a href="{{ site.baseurl }}{{ council.url }}">
+                        <div class="nav-link">{{ council.name_short }}</div>
+                    </a>
+                    {% endif %}
                 {% endfor %}
+                    
+                <a href="{{ site.baseurl }}/councils/special_programmes.html">
+                    <div class="nav-link">Special Programmes</div>
+                </a>
             </div>
         </div>
 
@@ -96,18 +102,28 @@
             </a>
         </div>
 
-        <div class="nav-button nav-button">
-            <a href="{{site.baseurl}}/contact.html">
-                <div class="nav-button__title">Contact</div>
+        <div class="nav-button nav-button--no-menu">
+            <a href="{{site.baseurl}}/delegate_resources.html">
+                <div class="nav-button__title">Delegate Resources</div>
             </a>
-            <div class="dropdown-content">
-                <a href="{{ site.baseurl }}/contact.html" class="mobile-only">
-                    <div class="nav-link">Contact Details</div>
-                </a>
-                <a href="{{ site.baseurl }}/registration.html">
-                    <div class="nav-link">Registration</div>
-                </a>    
-            </div>
+        </div>
+        
+        <div class="nav-button nav-button--no-menu">
+            <a href="{{ site.baseurl }}/registration.html">
+                <div class="nav-button__title">Registration</div>
+            </a>    
+        </div>
+
+        <div class="nav-button nav-button--no-menu">
+            <a href="{{ site.baseurl }}/contact.html">
+                <div class="nav-button__title">Contact Us</div>
+            </a>    
+        </div>
+
+        <div class="nav-button nav-button--no-menu">
+            <a href="{{ site.baseurl }}/faq.html">
+                <div class="nav-button__title">FAQs</div>
+            </a>    
         </div>
         
     </nav>
