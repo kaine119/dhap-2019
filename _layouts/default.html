@@ -16,7 +16,7 @@
     {% endfor %}
 
     <title>
-        {% if page.collection == "councils" or page.collection == "org_committees" %}
+        {% if page.layout == "group" %}
             {{ page.name }} | DHAP 2019
         {% else %}
             {{ page.title }} | DHAP 2019
