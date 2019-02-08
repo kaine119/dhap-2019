@@ -13,20 +13,14 @@ stylesheets:
             <h1>The Executive Board</h1>
             <p>{{ site.data.paragraphs.councils_intro }}</p>
         </div>
-        <div id="title__arrow">
-            <svg width="10" height="20" version="1.1" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
-                <g transform="translate(0 -291.71)">
-                    <path d="m0 291.71 2.6458 2.6458-2.6458 2.6458" fill="none" stroke-width=".26458"/>
-                </g>
-            </svg>
-
-        </div>
     </div>
 
     <div id="content">
 
         {% for council in site.councils %}
 
+        {% unless council.name == "Special Programmes" %}
+        
         <div class="council" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
             <div class="council__name">
                 <div class="council__name__long">
@@ -37,6 +31,9 @@ stylesheets:
                 </a>
             </div>
         </div>
+        
+        {% endunless %}
+
 
         {% endfor %}
         
