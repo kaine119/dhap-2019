@@ -5,14 +5,22 @@ stylesheets:
     - group.css
 ---
 
-{% assign image_name = "groups/" | append: page.image_name %}
+{% if page.image_name %}
+    {% assign image_name = "groups/" | append: page.image_name %}
+{% else %}
+    {% assign image_name = "" %}
+{% endif %}
 {% include titlebar.html title=page.name image=image_name %}
 
 {{ content }}
 
 <hr>
 
+{% if page.collection == "councils" %}
+<h2>Chairs coming soon</h2>
+{% else %}
 <h2>Members coming soon</h2>
+{% endif %}
 
 <!-- {% for person in site.people %}
     {% if person.group == page.name_short %}
