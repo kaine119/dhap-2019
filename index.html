@@ -63,6 +63,12 @@ scripts:
                 <h1>Welcome address</h1>
             </div>
             {{ site.data.paragraphs.welcome_address | markdownify }}
+
+            <div id="signoff">
+                Yours sincerely,<br>
+                <img src="{{ site.baseurl }}/assets/img/signature.png" />
+                {{ site.data.paragraphs.welcome_address_signoff | markdownify }}
+            </div>
         </div>
     </div>
 

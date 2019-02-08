@@ -8,12 +8,14 @@ layout: content
 {{ site.data.paragraphs.welcome_address }}
 
 <div id="signoff">
+Yours sincerely,<br>
+<img src="{{ site.baseurl }}/assets/img/signature.png" />
 {{ site.data.paragraphs.welcome_address_signoff | markdownify }}
 </div>
 
 <style>
     #signoff {
-        text-align: right;
+        text-align-last: right;
         align-self: flex-end;
     }
 </style>

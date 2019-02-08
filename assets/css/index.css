@@ -331,4 +331,9 @@ rect, circle {
         color: var(--accent2);
     }
 
+    #signoff {
+        text-align-last: right;
+        align-self: flex-end;
+    }
+
 }
