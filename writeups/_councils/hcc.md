@@ -1,5 +1,5 @@
 ---
-name: Historical Crisis Committee
+group_name: Historical Crisis Committee
 name_short: HCC
 image_name: hcc.jpg
 ---

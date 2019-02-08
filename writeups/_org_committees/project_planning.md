@@ -1,5 +1,5 @@
 ---
-name: Project Planning
+group_name: Project Planning
 image_name: project_planning.jpg
 ---
 

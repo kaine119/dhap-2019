@@ -1,5 +1,5 @@
 ---
-name: United Nations Security Council
+group_name: United Nations Security Council
 name_short: UNSC
 image_name: unsc.jpg
 ---

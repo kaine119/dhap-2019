@@ -1,5 +1,5 @@
 ---
-name: Communications
+group_name: Communications
 image_name: communications.jpg
 ---
 

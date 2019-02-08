@@ -64,7 +64,7 @@
                     <div class="nav-link">Overview</div>
                 </a>
                 {% for council in site.councils %}
-                    {% if council.name != "Special Programmes" %}
+                    {% if council.group_name != "Special Programmes" %}
                     <a href="{{ site.baseurl }}{{ council.url }}">
                         <div class="nav-link">{{ council.name_short }}</div>
                     </a>
@@ -87,7 +87,7 @@
                 </a>
                 {% for comm in site.org_committees %}
                 <a href="{{ site.baseurl }}{{ comm.url }}">
-                    <div class="nav-link">{{ comm.name }}</div>
+                    <div class="nav-link">{{ comm.group_name }}</div>
                 </a>    
                 {% endfor %}
             </div>

@@ -1,5 +1,5 @@
 ---
-name: Publicity
+group_name: Publicity
 image_name: publicity.jpg
 ---
 

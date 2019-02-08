@@ -19,12 +19,12 @@ stylesheets:
 
         {% for council in site.councils %}
 
-        {% unless council.name == "Special Programmes" %}
+        {% unless council.group_name == "Special Programmes" %}
         
         <div class="council" style="background-image: url({{ site.baseurl }}/assets/img/groups/{{ council.image_name }})">
             <div class="council__name">
                 <div class="council__name__long">
-                    {{ council.name }}
+                    {{ council.group_name }}
                 </div>
                 <a href="{{ site.baseurl }}{{ council.url }}">
                     {% include button.html content="Read more" classes="council__link" %}
