@@ -111,9 +111,8 @@ rect, circle {
 #countdown__over {
     display: none;
     text-align: center;
-    background: rgba(204, 204, 204, 0.6);
     font-size: 50pt;
-    border-radius: 10px;
+    color: #eee;
 }
 
 #countdown__subtitle {

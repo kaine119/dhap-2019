@@ -32,8 +32,8 @@ colors:
 # end_time: when the summit ends
 dates:
   launch_time: 2019-01-25T00:00
-  start_time: 2019-06-06T00:00
-  end_time: 2019-06-03T19:00
+  start_time: 2019-06-06T07:45
+  end_time: 2019-06-08T15:30
 
 collections_dir: writeups
 
