@@ -85,6 +85,10 @@
     margin-bottom: 1vh;
 }
 
+.council a {
+    pointer-events: none;
+}
+
 .council .council__link {
     visibility: hidden;
     opacity: 0;
@@ -97,6 +101,17 @@
 
 .council:hover .council__name__long {
     transform: translateY(0px);
+}
+
+.council:hover a {
+    animation: enable-link 0.05s linear;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+@keyframes enable-link {
+    from { pointer-events: none; }
+    to { pointer-events: auto; }
 }
 
 .council:hover .council__link {
