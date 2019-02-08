@@ -8,7 +8,7 @@ title: Registration
 **Independent delegates** may register through this link:
 
 <div class="button-wrapper">
-<a href="https://docs.google.com/forms/d/1RAzgGVLygxse04goA5iqWBxaFhR2CiHS6jnWqFg48Pc" target="_blank">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdhoSdCZDXn7hSJn30wRn8mE1pZ2bHEIxiVV_TOmjnp4MPqAQ" target="_blank">
 {% include button.html content="Independent Delegates" %}
 </a>
 </div>
@@ -16,7 +16,7 @@ title: Registration
 **Local delegations** may register by completing a soft-copy form and e-mailing it to **aseanplus.communications@dhs.sg**.
 
 <div class="button-wrapper">
-<a href="https://docs.google.com/document/d/1VjTv1CMg0LiXLXTcyOTt3ASqZvRmsDZC_x9GMtrmgK4/" target="_blank">
+<a href="{{ site.baseurl }}/assets/2019%20School%20Delegations%20Registration%20Form.docx" download>
 {% include button.html content="Local Delegations" %}
 </a>
 </div>
