@@ -62,18 +62,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     transition: all 0.5s ease-out;
 }
 
 .council__name {
-    visibility: hidden;
-    opacity: 0;
     width: 50%;
     height: auto;
     font-size: 20pt;
     color: #fff;
-    transition: all 0.5s ease-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,6 +80,8 @@
 }
 
 .council__name__long {
+    transform: translateY(calc(5vh + 10px));
+    transition: all 0.5s ease-out;
     margin-bottom: 1vh;
 }
 
@@ -95,9 +95,8 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.council:hover .council__name {
-    opacity: 1;
-    visibility: visible;
+.council:hover .council__name__long {
+    transform: translateY(0px);
 }
 
 .council:hover .council__link {
