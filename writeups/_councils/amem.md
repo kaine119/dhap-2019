@@ -1,6 +1,7 @@
 ---
 group_name: ASEAN Ministers on Energy Meeting
 name_short: AMEM
+title: AMEM
 image_name: amem.jpg
 ---
 

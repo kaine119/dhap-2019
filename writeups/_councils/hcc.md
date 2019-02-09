@@ -1,6 +1,7 @@
 ---
 group_name: Historical Crisis Committee
 name_short: HCC
+title: HCC
 image_name: hcc.jpg
 ---
 

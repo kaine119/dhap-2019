@@ -1,6 +1,7 @@
 ---
 group_name: ASEAN Regional Forum
 name_short: ARF
+title: ARF
 image_name: arf.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 group_name: ASEAN Ministerial Meeting on Science and Technology
 name_short: AMMST
+title: AMMST
 image_name: ammst.jpg
 ---
 

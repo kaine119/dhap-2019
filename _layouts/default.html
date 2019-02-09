@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}">
     {% endfor %}
 
+    {% seo title=false %}
     <title>
         {% if page.layout == "group" %}
             {{ page.group_name }} | DHAP 2019
@@ -22,6 +23,7 @@
             {{ page.title }} | DHAP 2019
         {% endif %}
     </title>
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
 </head>
 <body>
     {% include header.html %}

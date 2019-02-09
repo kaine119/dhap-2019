@@ -1,6 +1,7 @@
 ---
 group_name: Press Corps
 name_short: Press Corps
+title: Press Corps
 image_name: press.jpg
 ---
 
