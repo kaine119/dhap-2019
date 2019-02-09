@@ -13,3 +13,5 @@ delegates to be adept at managing inherent biases within their press agencies.
 Delegates of the Press Corps can look forward to forwarding the agenda of 
 their respective agencies with reports that consolidate the proceedings of 
 reach and every council.
+
+---

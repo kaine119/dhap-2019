@@ -34,3 +34,5 @@ the treaty. In the years since, efforts to tighten arms transfer controls in the
 appear to have stalled. In the ARF, delegates are expected to scrutinise existing 
 frameworks to identify and close key loopholes which illegal traders continue to exploit, 
 so as to ameliorate the unregulated flow of arms.
+
+---

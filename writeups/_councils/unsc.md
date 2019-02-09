@@ -33,3 +33,5 @@ flaws within the United Nations. Delegates can come up with measures to work
 within the structure of the fledgling United Nations and manoeuvre within the 
 Cold War context to balance between the different expectations of the superpowers 
 and achieve lasting peace and security within Congo. 
+
+---

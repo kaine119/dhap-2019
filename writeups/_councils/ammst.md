@@ -35,3 +35,5 @@ policy direction, a paucity of relevant infrastructure and widening intra-region
 disparities in the level of technological advancement. Delegates of the AMMST will 
 be challenged to craft solutions to overcome these challenges such that the 
 biotechnology industry in Southeast Asia are able to flourish.
+
+---
