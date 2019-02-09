@@ -46,6 +46,12 @@ article.content h1 {
     border-bottom: 1px solid var(--accent2);
 }
 
+article.content h2 {
+    /* TODO: remove this declaration on launch; */
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
 
 article.content p {
     text-align: justify;
