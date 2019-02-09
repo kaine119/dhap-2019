@@ -10,7 +10,11 @@ The Dunman High Model ASEAN Plus Summit (DHAP) is the flagship event of Dunman H
 # Theme
 
 <div class="image">
-<img src="{{ site.baseurl }}/assets/img/logo.png" alt="DHAP logo">
+    <picture>
+        <source srcset="{{ site.baseurl }}/assets/img/logo.webp" type="image/webp">
+        <source srcset="{{ site.baseurl }}/assets/img/logo.png" type="image/png">
+        <img src="{{ site.baseurl }}/assets/img/logo.png" alt="DHAP logo"/>
+    </picture>
 </div>
 
 The theme for DHAP 2019 is “Interconnections”. This theme is a recognition of the broad

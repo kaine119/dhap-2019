@@ -1,7 +1,11 @@
 <header>
 
     <a href="{{ site.baseurl }}/" id="logo">
-        <img src="{{ site.baseurl }}/assets/img/logo.png"/>
+        <picture>
+            <source srcset="{{ site.baseurl }}/assets/img/logo.webp" type="image/webp">
+            <source srcset="{{ site.baseurl }}/assets/img/logo.png" type="image/png">
+            <img src="{{ site.baseurl }}/assets/img/logo.png" alt="DHAP logo"/>
+        </picture>
     </a>
     
     <a href="{{ site.baseurl }}/">
@@ -34,7 +38,11 @@
 
         <div class="nav__logo">
             <a href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/assets/img/logo.png" alt="">
+                <picture>
+                    <source srcset="{{ site.baseurl }}/assets/img/logo.webp" type="image/webp">
+                    <source srcset="{{ site.baseurl }}/assets/img/logo.png" type="image/png">
+                    <img src="{{ site.baseurl }}/assets/img/logo.png" alt="DHAP logo"/>
+                </picture>
             </a>
         </div>
 
