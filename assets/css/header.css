@@ -200,6 +200,10 @@ nav {
         width: 100%;
     }
 
+    .nav-button:last-child {
+        margin-bottom: 30vh;
+    }
+
     .nav-button > a {
         width: 100%;
     }

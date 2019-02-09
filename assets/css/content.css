@@ -70,6 +70,10 @@ article.content > ul {
     margin-left: 5vw;
 }
 
+article.content > ol {
+    margin-left: 5vw;
+}
+
 @media screen and (max-width: 1000px) {
     article.content {
         width: 100vw;
