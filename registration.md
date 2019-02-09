@@ -8,7 +8,7 @@ title: Registration
 **Independent delegates** may register through this link:
 
 <div class="button-wrapper">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdhoSdCZDXn7hSJn30wRn8mE1pZ2bHEIxiVV_TOmjnp4MPqAQ/viewform" target="_blank">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdhoSdCZDXn7hSJn30wRn8mE1pZ2bHEIxiVV_TOmjnp4MPqAQ/viewform" target="_blank" rel="noreferrer">
 {% include button.html content="Independent Delegates" %}
 </a>
 </div>

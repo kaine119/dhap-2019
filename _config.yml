@@ -15,6 +15,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_url: https://www.facebook.com/dhap2019/
 instagram_url: https://www.instagram.com/dhaseanplus/
 
+social:
+  links:
+    - https://www.facebook.com/dhap2019/
+    - https://www.instagram.com/dhaseanplus/
+
 # Build settings
 markdown: kramdown
 
