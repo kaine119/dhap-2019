@@ -3,7 +3,7 @@ title: Contact Us
 layout: content
 ---
 
-{% include titlebar.html title="Contact" %}
+{% include titlebar.html title="Contact Us" %}
 
 # Email and Social Media
 
