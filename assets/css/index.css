@@ -292,6 +292,7 @@ rect, circle {
         padding: 5vw;
         height: auto;
         color: #222;
+        text-align: justify;
     }
 
     .welcome-address__greeting {
