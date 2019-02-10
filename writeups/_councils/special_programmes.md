@@ -2,6 +2,7 @@
 group_name: Special Programmes
 name_short: Special Programmes
 title: Special Programmes
+image_name: special_programmes.jpg
 ---
 
 The Special Programmes Team are involved in the 
