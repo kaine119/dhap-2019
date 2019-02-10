@@ -59,7 +59,4 @@ body {
 
 main {
     width: 100vw;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
 }
