@@ -97,6 +97,18 @@
     transform: translateY(0px);
 }
 
+@keyframes enable-link {
+    from { pointer-events: none; }
+    to { pointer-events: auto; }
+}
+
+.council:hover a {
+    pointer-events: auto;
+    animation: enable-link 0.05s linear;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
 .council:hover .council__link {
     opacity: 1;
     transition: all 0.5s ease-out 0.5s;
