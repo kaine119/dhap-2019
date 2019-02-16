@@ -22,7 +22,7 @@ title: Registration
 </div>
 
 We will be having an Early Bird Discount this year for DHAP from
-15 to 26 February 2019. The registration fee will be $40 during
+**18 February to 4 March**. The registration fee will be $40 during
 this period. After this period, the fee will be $60. Registration costs
 will cover lunch on all three days of conference, as well as dinner
 on the second day. It also covers all conference materials such as
@@ -46,4 +46,4 @@ This is to be submitted either on DHAP Pre-Summit briefing (3 May
 
 Due to limited vacancies at the event, participating schools will be selected on a first come, first served basis. In addition, an email will be sent to confirm the participation of participating schools.
 
-Please note that the registration opens 15 February 2019 and the deadline for registration is 24 March 2019.
+Please note that the registration opens **18 February 2019** and the deadline for registration is **24 March 2019**.
