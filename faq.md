@@ -25,7 +25,7 @@ number or limit to the number of delegates per delegation.
 
 4. **How can I register for DHAP 2019?**  
 Registration can be made as a school delegation or an
-independent delegate. Registration begins on 15 February 2019
+independent delegate. Registration begins on 18 February 2019
 and ends on 24 March 2019. To register, please fill up the form
 which will be found under the 'Registration' tab of the DHAP 2019
 website at http://dhaseanplus.com, and email it to
