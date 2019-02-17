@@ -16,7 +16,7 @@ title: Registration
 **Local delegations** may register by completing a soft-copy form and e-mailing it to **aseanplus.communications@dhs.sg**.
 
 <div class="button-wrapper">
-<a href="{{ site.baseurl }}/assets/2019%20School%20Delegations%20Registration%20Form.docx" download>
+<a href="{{ site.baseurl }}/assets/DHAP%202019%20Registration%20Form%20(Local Schools).docx" download>
 {% include button.html content="Local Delegations" %}
 </a>
 </div>
