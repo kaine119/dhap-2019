@@ -20,8 +20,8 @@ preferences when they register. However, the eventual allocation
 will be assigned by the Secretariat.
 
 3. **How many delegations can each school register?**  
-Each school can register one delegation. There is no minimum
-number or limit to the number of delegates per delegation.
+Each school can register one delegation. The maximum number of delegates per
+delegation is set at 9.
 
 4. **How can I register for DHAP 2019?**  
 Registration can be made as a school delegation or an
