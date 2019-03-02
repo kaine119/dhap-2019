@@ -1,5 +1,6 @@
 ---
 group_name: Project Planning
+name_short: Project Planning
 image_name: project_planning.jpg
 ---
 

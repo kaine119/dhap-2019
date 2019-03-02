@@ -1,5 +1,6 @@
 ---
 group_name: Communications
+name_short: Communications
 image_name: communications.jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
 group_name: Publicity
+name_short: Publicity
 image_name: publicity.jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
 group_name: Logistics
+name_short: Logistics
 image_name: logistics.jpg
 ---
 
