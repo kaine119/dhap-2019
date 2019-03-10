@@ -14,13 +14,7 @@ stylesheets:
 
 {{ content }}
 
-{% if page.collection == "councils" %}
-<h2>Chairs coming soon</h2>
-{% else %}
-<h2>Members coming soon</h2>
-{% endif %}
-
-<!-- {% for person in site.people %}
+{% for person in site.people %}
     {% if person.group == page.name_short %}
         <div class="person">
             <div class="person__image">
@@ -32,4 +26,4 @@ stylesheets:
             </div>
         </div>
     {% endif %}
-{% endfor %} -->
+{% endfor %}
