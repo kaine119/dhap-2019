@@ -45,8 +45,13 @@
 
     .person:nth-child(odd) {
         flex-direction: column;
+        text-align-last: center;
     }
 
+    .person:nth-child(even) {
+        flex-direction: column;
+        text-align-last: center;
+    }
     .person__image {
         width: 30vw;
     }
