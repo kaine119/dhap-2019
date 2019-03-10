@@ -1,7 +1,7 @@
 ---
 name: Tia Bhaskar
 group: Communications
-image_name: tia_bhaskhar.JPG
+image_name: tia_bhaskar.JPG
 ---
 
 ### Executive Director

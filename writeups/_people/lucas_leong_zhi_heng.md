@@ -1,7 +1,7 @@
 ---
 name: Lucas Leong Zhi Heng
 group: Special Programmes
-image_name: lucase_leong_zhi_heng.JPG
+image_name: lucas_leong_zhi_heng.JPG
 ---
 
 ### Chair
