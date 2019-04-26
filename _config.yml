@@ -40,6 +40,8 @@ dates:
   start_time: 2019-06-06T07:45
   end_time: 2019-06-08T15:30
 
+resources_password: test
+
 collections_dir: writeups
 
 collections: 

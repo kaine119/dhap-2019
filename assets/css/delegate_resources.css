@@ -1,0 +1,21 @@
+#password-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+}
+
+#password {
+    width: 40vw;
+    margin-right: 10vw;
+    text-align: center;
+    border: 0px solid #444;
+    box-shadow: 0px 1px 5px 1px #444;
+    border-radius: 2px;
+    
+    padding: 1vmin;
+    font-size: 5vmin;
+}
