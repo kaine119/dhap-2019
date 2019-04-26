@@ -1,9 +1,8 @@
 ---
 ---
-let launchDate = new Date("{{ site.dates.launch_time }}");
-let startDate = new Date("{{ site.dates.start_time }}");
-let endDate = new Date("{{ site.dates.end_time }}");
-
+let launchDate = new Date("{{ site.dates.launch_time }}+08:00");
+let startDate = new Date("{{ site.dates.start_time }}+08:00");
+let endDate = new Date("{{ site.dates.end_time }}+08:00");
 
 let showCountdown = function() {
     let diffToStart = startDate - new Date();
