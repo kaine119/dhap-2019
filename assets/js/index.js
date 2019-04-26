@@ -1,9 +1,8 @@
 ---
 ---
-let launchDate = new Date("{{ site.dates.launch_time }}");
-let startDate = new Date("{{ site.dates.start_time }}");
-let endDate = new Date("{{ site.dates.end_time }}")
-let totalDays = (startDate - launchDate) / 86400000;
+let launchDate = new Date("{{ site.dates.launch_time }}+08:00");
+let startDate = new Date("{{ site.dates.start_time }}+08:00");
+let endDate = new Date("{{ site.dates.end_time }}+08:00");
 
 let showCountdown = function() {
     let diffToStart = startDate - new Date();
@@ -19,16 +18,12 @@ let showCountdown = function() {
         let seconds = Math.floor(diffToStart / 1000);
 
         document.getElementById('days').innerText = days.toString().padStart(2, '0');
-        if (days / totalDays < 1) {
-            // document.getElementById('days__rect').style.strokeDashoffset = (1000 - (days / totalDays) * 1000);
-            document.getElementById('days__rect').style.strokeDashoffset = (1000 - (hours / 24) * 1000);
-            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-            document.getElementById('hours__rect').style.strokeDashoffset = (1000 - (minutes / 60) * 1000);
-            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-            document.getElementById('minutes__rect').style.strokeDashoffset = (1000 - (seconds / 60) * 1000);
-        } else {
-            document.getElementById('days__rect').style.strokeDashoffset = 0;
-        } 
+        document.getElementById('days__rect').style.strokeDashoffset = (1000 - (hours / 24) * 1000);
+        document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+        document.getElementById('hours__rect').style.strokeDashoffset = (1000 - (minutes / 60) * 1000);
+        document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+        document.getElementById('minutes__rect').style.strokeDashoffset = (1000 - (seconds / 60) * 1000);
+        
     } else if (diffToEnd > 0) {
         let digits = document.getElementsByClassName('countdown__digits');
         for (var i = 0; i < digits.length; i++) {
