@@ -10,7 +10,7 @@ article.content {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    max-width: 50%;
+    width: 50%;
     min-height: 14vmin;
     align-self: center;
     margin-top: 10px;
@@ -27,11 +27,11 @@ article.content {
 
 #expando.open {
     margin-top: 0px;
-    max-width: 100%;
+    width: 100%;
     min-height: 40vh;
     margin-bottom: 0vh;
     transition: 
-        max-width 0.5s ease-in-out,
+        width 0.5s ease-in-out,
         margin-top 0.5s ease-in-out 0.5s,
         margin-bottom 0.5s ease-in-out 0.5s,
         min-height 0.5s ease-in-out 0.5s;
@@ -147,6 +147,11 @@ article.content {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+div.council__files a {
+    color: #000;
+    text-decoration: none;
 }
 
 .council__file {
